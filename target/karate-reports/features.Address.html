@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("22ea30f7-dd77-4be9-8546-7cdd170b904a",{name:"sahel"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.Address</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-06-06 11:04:14 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>Post Address Tek Retail API</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:30]"><span>[2:30]</span> <span>get address API test</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:38]"><span>[3:38]</span> <span>put (update) address API test</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:57]"><span>[4:57]</span> <span>delete Address</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/Address.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Retail Address Api Features</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Regression</a><a class="badge badge-primary" href="karate-tags.html">postAddress</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">Post Address Tek Retail API</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1372</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url appUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:04:11.606 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenRetail = callonce read(&quot;getToken.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">881</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">23:04:12.502 &lt;&lt; lock released, cached callonce: read(&quot;getToken.feature&quot;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.getToken</div>
+      </div>
+      <div class="time-cell passed">874</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url appUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.5">23:04:11.624 &gt;&gt; lock acquired, begin callonce: read(&quot;getToken.feature&quot;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/auth/login&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>request {&quot;email&quot; : &quot;SpongeBobss46@tekschool.us&quot;, &quot;password&quot; : &quot;Test12345$&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">849</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.8">23:04:11.882 request:
+1 &gt; POST https://tek-retail-api.azurewebsites.net/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 62
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;SpongeBobss46@tekschool.us&quot;,&quot;password&quot;:&quot;Test12345$&quot;}
+
+23:04:12.492 response time in milliseconds: 609
+1 &lt; 200
+1 &lt; Content-Length: 406
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 07 Jun 2023 06:04:12 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;196-CguOKwK8EoXuX7yi0hh6T+jFEM4&quot;
+1 &lt; X-Powered-By: Express
+{&quot;name&quot;:&quot;SpongeBob&quot;,&quot;email&quot;:&quot;SpongeBobss46@tekschool.us&quot;,&quot;userId&quot;:2992,&quot;role&quot;:&quot;customer&quot;,&quot;roleId&quot;:2864,&quot;phoneNumber&quot;:null,&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3BvbmdlQm9iIiwiZW1haWwiOiJTcG9uZ2VCb2JzczQ2QHRla3NjaG9vbC51cyIsInVzZXJJZCI6Mjk5Miwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjoyODY0LCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNjg2MTE3ODUyfQ.j6rmUk81aYrQm9xax8ltVjvAgga503TJ6UeZOpkJUkA&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.email == &#39;SpongeBobss46@tekschool.us&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.11">23:04:12.502 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3BvbmdlQm9iIiwiZW1haWwiOiJTcG9uZ2VCb2JzczQ2QHRla3NjaG9vbC51cyIsInVzZXJJZCI6Mjk5Miwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjoyODY0LCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNjg2MTE3ODUyfQ.j6rmUk81aYrQm9xax8ltVjvAgga503TJ6UeZOpkJUkA 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenRetail.response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-access-token = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def addressId = read(&#39;file:./target/address.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateData = Java.type(&quot;test.DataGenerator&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def country = generateData.getCountry()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">47</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def fullName = generateData.getFullName()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def phoneNumber = generateData.getPhoneNumber()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">47</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def street = generateData.getStreet()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def apartment = generateData.getApartment()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def city = generateData.getCity()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def state = generateData.getState()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def zipCode = generateData.getZipCode()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/address&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">362</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">23:04:12.634 request:
+1 &gt; POST https://tek-retail-api.azurewebsites.net/address
+1 &gt; x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3BvbmdlQm9iIiwiZW1haWwiOiJTcG9uZ2VCb2JzczQ2QHRla3NjaG9vbC51cyIsInVzZXJJZCI6Mjk5Miwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjoyODY0LCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNjg2MTE3ODUyfQ.j6rmUk81aYrQm9xax8ltVjvAgga503TJ6UeZOpkJUkA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 199
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;country&quot;:&quot;Brunei Darussalam&quot;,&quot;fullName&quot;:&quot;Lanell Goldner&quot;,&quot;phoneNumber&quot;:&quot;(480) 806-9517&quot;,&quot;street&quot;:&quot;8337 Kuhn Locks&quot;,&quot;apartment&quot;:&quot;6886&quot;,&quot;city&quot;:&quot;Delilahfurt&quot;,&quot;state&quot;:&quot;New Hampshire&quot;,&quot;zipCode&quot;:&quot;09901&quot;}
+
+23:04:12.994 response time in milliseconds: 360
+1 &lt; 200
+1 &lt; Content-Length: 301
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 07 Jun 2023 06:04:13 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;12d-7l/ugQwK+xMuCekQ9tEnDli7MNg&quot;
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:7621,&quot;country&quot;:&quot;Brunei Darussalam&quot;,&quot;fullName&quot;:&quot;Lanell Goldner&quot;,&quot;phoneNumber&quot;:&quot;(480) 806-9517&quot;,&quot;street&quot;:&quot;8337 Kuhn Locks&quot;,&quot;apartment&quot;:&quot;6886&quot;,&quot;city&quot;:&quot;Delilahfurt&quot;,&quot;state&quot;:&quot;New Hampshire&quot;,&quot;zipCode&quot;:&quot;09901&quot;,&quot;userId&quot;:2992,&quot;updatedAt&quot;:&quot;2023-06-07T06:04:13.113Z&quot;,&quot;createdAt&quot;:&quot;2023-06-07T06:04:13.113Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Regression</a><a class="badge badge-primary" href="karate-tags.html">getAddress</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:30]</span>
+                <span class="scenario-name">get address API test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>456</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url appUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:04:13.002 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenRetail = callonce read(&quot;getToken.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenRetail.response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-access-token = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def addressId = read(&#39;file:./target/address.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/address&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">422</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">23:04:13.007 request:
+1 &gt; GET https://tek-retail-api.azurewebsites.net/address
+1 &gt; x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3BvbmdlQm9iIiwiZW1haWwiOiJTcG9uZ2VCb2JzczQ2QHRla3NjaG9vbC51cyIsInVzZXJJZCI6Mjk5Miwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjoyODY0LCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNjg2MTE3ODUyfQ.j6rmUk81aYrQm9xax8ltVjvAgga503TJ6UeZOpkJUkA
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:04:13.425 response time in milliseconds: 415
+1 &lt; 200
+1 &lt; Content-Length: 42265
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 07 Jun 2023 06:04:13 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;a519-JgpVNkQD2IDQiuluwL5AItKsv5Q&quot;
+1 &lt; X-Powered-By: Express
+[{&quot;id&quot;:6683,&quot;country&quot;:&quot;Lebanon&quot;,&quot;fullName&quot;:&quot;Maragaret Olson&quot;,&quot;phoneNumber&quot;:&quot;(850) 410-5519 x9862&quot;,&quot;street&quot;:&quot;54206 Armstrong Drive&quot;,&quot;apartment&quot;:&quot;25485&quot;,&quot;city&quot;:&quot;East Lester&quot;,&quot;state&quot;:&quot;Arizona&quot;,&quot;zipCode&quot;:64881,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:09:56.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-07T06:00:01.000Z&quot;},{&quot;id&quot;:6686,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Emmaline Abbott&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:17118,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:11:50.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:11:50.000Z&quot;},{&quot;id&quot;:6687,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Kesha Jacobson&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:83384,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:14:24.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:14:24.000Z&quot;},{&quot;id&quot;:6688,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Ms  Kate Renner&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:28015,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:15:17.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:15:17.000Z&quot;},{&quot;id&quot;:6689,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Denis Dooley Jr &quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:36117,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:15:24.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:15:24.000Z&quot;},{&quot;id&quot;:6690,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Rachael McDermott&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:71571,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:16:14.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:16:14.000Z&quot;},{&quot;id&quot;:6691,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Colby Simonis&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:19761,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:16:33.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:16:33.000Z&quot;},{&quot;id&quot;:6692,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Justin Rowe&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:90684,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:17:31.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:17:31.000Z&quot;},{&quot;id&quot;:6693,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Herschel Waters DVM&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:54093,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:20:19.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:20:19.000Z&quot;},{&quot;id&quot;:6694,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Arlie Wiegand&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:56218,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:20:42.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:20:42.000Z&quot;},{&quot;id&quot;:6695,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Edmund Franecki&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:34867,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:27:46.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:27:46.000Z&quot;},{&quot;id&quot;:6696,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Steve Crona PhD&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:1628,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:28:43.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:28:43.000Z&quot;},{&quot;id&quot;:6697,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Lynnette Hoeger&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:42061,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:28:59.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:28:59.000Z&quot;},{&quot;id&quot;:6698,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Casey Macejkovic&quot;,&quot;phoneNumber&quot;:&quot;660-580-4701&quot;,&quot;street&quot;:&quot;6502 Streich Springs&quot;,&quot;apartment&quot;:&quot;5488&quot;,&quot;city&quot;:&quot;Lake Janellefort&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:87823,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:52:21.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:52:21.000Z&quot;},{&quot;id&quot;:6699,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Darby Breitenberg&quot;,&quot;phoneNumber&quot;:&quot;703.202.9116&quot;,&quot;street&quot;:&quot;54467 Jaskolski Inlet&quot;,&quot;apartment&quot;:&quot;870&quot;,&quot;city&quot;:&quot;Albertoburgh&quot;,&quot;state&quot;:&quot;Missouri&quot;,&quot;zipCode&quot;:67985,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:54:31.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:54:31.000Z&quot;},{&quot;id&quot;:6700,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Osvaldo Reynolds&quot;,&quot;phoneNumber&quot;:&quot;509-925-5182&quot;,&quot;street&quot;:&quot;469 Alissa Roads&quot;,&quot;apartment&quot;:&quot;7435&quot;,&quot;city&quot;:&quot;East Tyburgh&quot;,&quot;state&quot;:&quot;West Virginia&quot;,&quot;zipCode&quot;:46518,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:55:36.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:55:36.000Z&quot;},{&quot;id&quot;:6701,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Steven Kohler&quot;,&quot;phoneNumber&quot;:&quot;267.202.4137&quot;,&quot;street&quot;:&quot;76777 Botsford Causeway&quot;,&quot;apartment&quot;:&quot;64801&quot;,&quot;city&quot;:&quot;Prosaccoton&quot;,&quot;state&quot;:&quot;Indiana&quot;,&quot;zipCode&quot;:8967,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:57:00.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:57:00.000Z&quot;},{&quot;id&quot;:6702,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Simona Jacobi Jr &quot;,&quot;phoneNumber&quot;:&quot;213.719.4778&quot;,&quot;street&quot;:&quot;136 Purdy Orchard&quot;,&quot;apartment&quot;:&quot;98539&quot;,&quot;city&quot;:&quot;West Benny&quot;,&quot;state&quot;:&quot;Maine&quot;,&quot;zipCode&quot;:46748,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:58:52.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:58:52.000Z&quot;},{&quot;id&quot;:6703,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Devona Kuhlman&quot;,&quot;phoneNumber&quot;:&quot;(636) 952-9904&quot;,&quot;street&quot;:&quot;21626 Thiel Walk&quot;,&quot;apartment&quot;:&quot;93113&quot;,&quot;city&quot;:&quot;South Gavin&quot;,&quot;state&quot;:&quot;Wyoming&quot;,&quot;zipCode&quot;:53823,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:59:07.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:59:07.000Z&quot;},{&quot;id&quot;:6704,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Lee Boehm&quot;,&quot;phoneNumber&quot;:&quot;(808) 814-7500&quot;,&quot;street&quot;:&quot;00201 OKon Club&quot;,&quot;apartment&quot;:&quot;44572&quot;,&quot;city&quot;:&quot;West Tashinaburgh&quot;,&quot;state&quot;:&quot;Idaho&quot;,&quot;zipCode&quot;:44548,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:59:35.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:59:35.000Z&quot;},{&quot;id&quot;:6705,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Rudolph Considine&quot;,&quot;phoneNumber&quot;:&quot;559-240-2846&quot;,&quot;street&quot;:&quot;0307 Minta Route&quot;,&quot;apartment&quot;:&quot;801&quot;,&quot;city&quot;:&quot;Nikoleland&quot;,&quot;state&quot;:&quot;South Carolina&quot;,&quot;zipCode&quot;:13309,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T17:01:27.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T17:01:27.000Z&quot;},{&quot;id&quot;:6706,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mrs  Daryl Shields&quot;,&quot;phoneNumber&quot;:&quot;1-803-330-3069&quot;,&quot;street&quot;:&quot;715 Antonio Wall&quot;,&quot;apartment&quot;:&quot;4327&quot;,&quot;city&quot;:&quot;Eltonshire&quot;,&quot;state&quot;:&quot;Hawaii&quot;,&quot;zipCode&quot;:94189,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T17:02:30.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T17:02:30.000Z&quot;},{&quot;id&quot;:6707,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Omega Cummerata&quot;,&quot;phoneNumber&quot;:&quot;1-801-307-0712&quot;,&quot;street&quot;:&quot;400 Sauer Glens&quot;,&quot;apartment&quot;:&quot;55914&quot;,&quot;city&quot;:&quot;Dickinsonview&quot;,&quot;state&quot;:&quot;Kansas&quot;,&quot;zipCode&quot;:18397,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T17:10:33.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T17:10:33.000Z&quot;},{&quot;id&quot;:6708,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Dana Monahan&quot;,&quot;phoneNumber&quot;:&quot;904.617.4406&quot;,&quot;street&quot;:&quot;365 Naoma Hills&quot;,&quot;apartment&quot;:&quot;7060&quot;,&quot;city&quot;:&quot;Lockmanview&quot;,&quot;state&quot;:&quot;Delaware&quot;,&quot;zipCode&quot;:23276,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T17:11:31.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T17:11:31.000Z&quot;},{&quot;id&quot;:6709,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Kyle Fisher&quot;,&quot;phoneNumber&quot;:&quot;602-313-6332&quot;,&quot;street&quot;:&quot;6395 Schimmel Junctions&quot;,&quot;apartment&quot;:&quot;2707&quot;,&quot;city&quot;:&quot;Bradlyhaven&quot;,&quot;state&quot;:&quot;Nebraska&quot;,&quot;zipCode&quot;:95412,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T18:12:01.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T18:12:01.000Z&quot;},{&quot;id&quot;:6710,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Kermit Howe&quot;,&quot;phoneNumber&quot;:&quot;1-316-928-6791&quot;,&quot;street&quot;:&quot;0597 Jacob Fort&quot;,&quot;apartment&quot;:&quot;65272&quot;,&quot;city&quot;:&quot;West Olene&quot;,&quot;state&quot;:&quot;New Mexico&quot;,&quot;zipCode&quot;:50136,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T18:13:10.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T18:13:10.000Z&quot;},{&quot;id&quot;:6711,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Leo Considine&quot;,&quot;phoneNumber&quot;:&quot;772.757.9913&quot;,&quot;street&quot;:&quot;57592 Torphy Glens&quot;,&quot;apartment&quot;:&quot;3703&quot;,&quot;city&quot;:&quot;West Patton&quot;,&quot;state&quot;:&quot;Florida&quot;,&quot;zipCode&quot;:96324,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T20:31:42.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T20:31:42.000Z&quot;},{&quot;id&quot;:6712,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Reed Beahan&quot;,&quot;phoneNumber&quot;:&quot;1-785-614-4047&quot;,&quot;street&quot;:&quot;143 Layla Mall&quot;,&quot;apartment&quot;:&quot;99878&quot;,&quot;city&quot;:&quot;East Robt&quot;,&quot;state&quot;:&quot;Alabama&quot;,&quot;zipCode&quot;:58263,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T20:32:26.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T20:32:26.000Z&quot;},{&quot;id&quot;:6713,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Trista Dickinson&quot;,&quot;phoneNumber&quot;:&quot;1-920-904-1439&quot;,&quot;street&quot;:&quot;061 Brigette Roads&quot;,&quot;apartment&quot;:&quot;859&quot;,&quot;city&quot;:&quot;East Cliftonfort&quot;,&quot;state&quot;:&quot;Texas&quot;,&quot;zipCode&quot;:38236,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T20:41:02.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T20:41:02.000Z&quot;},{&quot;id&quot;:6714,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Darrin Jenkins&quot;,&quot;phoneNumber&quot;:&quot;1-774-724-6974&quot;,&quot;street&quot;:&quot;59229 Reinger Crescent&quot;,&quot;apartment&quot;:&quot;559&quot;,&quot;city&quot;:&quot;Walkerview&quot;,&quot;state&quot;:&quot;West Virginia&quot;,&quot;zipCode&quot;:94906,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T20:41:42.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T20:41:42.000Z&quot;},{&quot;id&quot;:6715,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Savannah Rippin&quot;,&quot;phoneNumber&quot;:&quot;901.631.9552&quot;,&quot;street&quot;:&quot;486 Shanelle Knoll&quot;,&quot;apartment&quot;:&quot;385&quot;,&quot;city&quot;:&quot;North Ashantiland&quot;,&quot;state&quot;:&quot;Maine&quot;,&quot;zipCode&quot;:43631,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T21:21:58.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T21:21:58.000Z&quot;},{&quot;id&quot;:6716,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mr  Arnoldo Reichel&quot;,&quot;phoneNumber&quot;:&quot;1-850-206-0227&quot;,&quot;street&quot;:&quot;53027 Bryan Mission&quot;,&quot;apartment&quot;:&quot;200&quot;,&quot;city&quot;:&quot;Sheilaview&quot;,&quot;state&quot;:&quot;Massachusetts&quot;,&quot;zipCode&quot;:17136,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T21:22:28.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T21:22:28.000Z&quot;},{&quot;id&quot;:6721,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Andra Vandervort&quot;,&quot;phoneNumber&quot;:&quot;410-502-9357&quot;,&quot;street&quot;:&quot;632 April Expressway&quot;,&quot;apartment&quot;:&quot;3827&quot;,&quot;city&quot;:&quot;Lake Stanton&quot;,&quot;state&quot;:&quot;Virginia&quot;,&quot;zipCode&quot;:684,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T21:38:34.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T21:38:34.000Z&quot;},{&quot;id&quot;:6722,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Antonio Walsh V&quot;,&quot;phoneNumber&quot;:&quot;(954) 567-7253&quot;,&quot;street&quot;:&quot;80561 Rutha Harbor&quot;,&quot;apartment&quot;:&quot;989&quot;,&quot;city&quot;:&quot;South Osvaldo&quot;,&quot;state&quot;:&quot;Alaska&quot;,&quot;zipCode&quot;:86348,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T21:39:21.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T21:39:21.000Z&quot;},{&quot;id&quot;:6723,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Ta Purdy&quot;,&quot;phoneNumber&quot;:&quot;817-614-2635&quot;,&quot;street&quot;:&quot;25595 Tony Dale&quot;,&quot;apartment&quot;:&quot;70030&quot;,&quot;city&quot;:&quot;Leonardport&quot;,&quot;state&quot;:&quot;Arkansas&quot;,&quot;zipCode&quot;:86401,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T21:55:59.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T21:55:59.000Z&quot;},{&quot;id&quot;:6724,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Valorie McClure&quot;,&quot;phoneNumber&quot;:&quot;504.925.4263&quot;,&quot;street&quot;:&quot;7829 Hudson Knolls&quot;,&quot;apartment&quot;:&quot;92859&quot;,&quot;city&quot;:&quot;West Colleneton&quot;,&quot;state&quot;:&quot;Hawaii&quot;,&quot;zipCode&quot;:82216,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T21:56:40.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T21:56:40.000Z&quot;},{&quot;id&quot;:6725,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Francine Swift&quot;,&quot;phoneNumber&quot;:&quot;(352) 217-4929&quot;,&quot;street&quot;:&quot;23484 Reynaldo Pass&quot;,&quot;apartment&quot;:&quot;5956&quot;,&quot;city&quot;:&quot;Port Casey&quot;,&quot;state&quot;:&quot;Virginia&quot;,&quot;zipCode&quot;:86070,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T22:02:40.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T22:02:40.000Z&quot;},{&quot;id&quot;:6726,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Seema Kuvalis&quot;,&quot;phoneNumber&quot;:&quot;816-913-9601&quot;,&quot;street&quot;:&quot;0746 Elina Forest&quot;,&quot;apartment&quot;:&quot;3372&quot;,&quot;city&quot;:&quot;West Salina&quot;,&quot;state&quot;:&quot;New Jersey&quot;,&quot;zipCode&quot;:52763,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T22:03:30.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T22:03:30.000Z&quot;},{&quot;id&quot;:6738,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;John Doe&quot;,&quot;phoneNumber&quot;:&quot;0787931984&quot;,&quot;street&quot;:&quot;8642 Yule Street, Arvada CO&quot;,&quot;apartment&quot;:&quot;H.no 15&quot;,&quot;city&quot;:&quot;New York&quot;,&quot;state&quot;:&quot;Idaho&quot;,&quot;zipCode&quot;:30012,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-06T22:52:50.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-06T22:52:50.000Z&quot;},{&quot;id&quot;:6739,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;John Doe&quot;,&quot;phoneNumber&quot;:&quot;0787931984&quot;,&quot;street&quot;:&quot;8642 Yule Street, Arvada CO&quot;,&quot;apartment&quot;:&quot;H.no 15&quot;,&quot;city&quot;:&quot;New York&quot;,&quot;state&quot;:&quot;Idaho&quot;,&quot;zipCode&quot;:30012,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-06T23:50:33.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-06T23:50:33.000Z&quot;},{&quot;id&quot;:6740,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Kabob Maza&quot;,&quot;phoneNumber&quot;:&quot;0787931984&quot;,&quot;street&quot;:&quot;8642 Yule Street, Arvada CO&quot;,&quot;apartment&quot;:&quot;H.no 15&quot;,&quot;city&quot;:&quot;Kabul&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:30012,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-06T23:52:29.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-06T23:52:29.000Z&quot;},{&quot;id&quot;:6741,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Kabob Maza&quot;,&quot;phoneNumber&quot;:&quot;0787931984&quot;,&quot;street&quot;:&quot;8642 Yule Street, Arvada CO&quot;,&quot;apartment&quot;:&quot;H.no 15&quot;,&quot;city&quot;:&quot;Kabul&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:30012,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-06T23:53:09.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-06T23:53:09.000Z&quot;},{&quot;id&quot;:6743,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Kabob Maza&quot;,&quot;phoneNumber&quot;:&quot;0787931984&quot;,&quot;street&quot;:&quot;8642 Yule Street, Arvada CO&quot;,&quot;apartment&quot;:&quot;H.no 15&quot;,&quot;city&quot;:&quot;Kabul&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:30012,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T00:11:53.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T00:11:53.000Z&quot;},{&quot;id&quot;:6749,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Erin Ward&quot;,&quot;phoneNumber&quot;:&quot;417.270.2990&quot;,&quot;street&quot;:&quot;09283 Latoria Harbor&quot;,&quot;apartment&quot;:&quot;9564&quot;,&quot;city&quot;:&quot;Elishaland&quot;,&quot;state&quot;:&quot;Maryland&quot;,&quot;zipCode&quot;:3503,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T14:14:54.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T14:14:54.000Z&quot;},{&quot;id&quot;:6750,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Colton Ruecker&quot;,&quot;phoneNumber&quot;:&quot;219.716.3655&quot;,&quot;street&quot;:&quot;61890 Carissa Stream&quot;,&quot;apartment&quot;:&quot;83312&quot;,&quot;city&quot;:&quot;Francishaven&quot;,&quot;state&quot;:&quot;Texas&quot;,&quot;zipCode&quot;:52779,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T14:15:39.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T14:15:39.000Z&quot;},{&quot;id&quot;:6751,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Kabob Maza&quot;,&quot;phoneNumber&quot;:&quot;0787931984&quot;,&quot;street&quot;:&quot;8642 Yule Street, Arvada CO&quot;,&quot;apartment&quot;:&quot;H.no 15&quot;,&quot;city&quot;:&quot;Kabul&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:30012,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T14:23:20.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T14:23:20.000Z&quot;},{&quot;id&quot;:6752,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Kabob Maza&quot;,&quot;phoneNumber&quot;:&quot;0787931984&quot;,&quot;street&quot;:&quot;8642 Yule Street, Arvada CO&quot;,&quot;apartment&quot;:&quot;H.no 15&quot;,&quot;city&quot;:&quot;Kabul&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:30012,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T14:23:57.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T14:23:57.000Z&quot;},{&quot;id&quot;:6758,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T18:11:56.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T18:11:56.000Z&quot;},{&quot;id&quot;:6759,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T18:12:29.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T18:12:29.000Z&quot;},{&quot;id&quot;:6760,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T18:12:45.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T18:12:45.000Z&quot;},{&quot;id&quot;:6761,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T18:26:21.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T18:26:21.000Z&quot;},{&quot;id&quot;:6762,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T18:26:43.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T18:26:43.000Z&quot;},{&quot;id&quot;:6763,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T18:27:11.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T18:27:11.000Z&quot;},{&quot;id&quot;:6764,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T18:29:45.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T18:29:45.000Z&quot;},{&quot;id&quot;:6765,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T18:43:35.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T18:43:35.000Z&quot;},{&quot;id&quot;:6766,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T18:43:51.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T18:43:51.000Z&quot;},{&quot;id&quot;:6767,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T18:54:20.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T18:54:20.000Z&quot;},{&quot;id&quot;:6768,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T19:07:11.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T19:07:11.000Z&quot;},{&quot;id&quot;:6769,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T19:07:27.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T19:07:27.000Z&quot;},{&quot;id&quot;:6770,&quot;country&quot;:&quot;Afghanistan&quot;,&quot;fullName&quot;:&quot;Mano G&quot;,&quot;phoneNumber&quot;:&quot;5546211879&quot;,&quot;street&quot;:&quot;123 spicy street&quot;,&quot;apartment&quot;:&quot;SM&quot;,&quot;city&quot;:&quot;Seattle&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:43151,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T19:27:37.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T19:27:37.000Z&quot;},{&quot;id&quot;:6771,&quot;country&quot;:&quot;net.datafaker.providers.base.Country@6ccac6f4&quot;,&quot;fullName&quot;:&quot;Eddie Stoltenberg&quot;,&quot;phoneNumber&quot;:&quot;(404) 360-4635&quot;,&quot;street&quot;:&quot;7770 Reinger Squares&quot;,&quot;apartment&quot;:&quot;033&quot;,&quot;city&quot;:&quot;Lake Ryanview&quot;,&quot;state&quot;:&quot;Nevada&quot;,&quot;zipCode&quot;:23744,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T19:56:53.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T19:56:53.000Z&quot;},{&quot;id&quot;:6772,&quot;country&quot;:&quot;Haiti&quot;,&quot;fullName&quot;:&quot;Gayle Zboncak&quot;,&quot;phoneNumber&quot;:&quot;(870) 541-4893&quot;,&quot;street&quot;:&quot;74790 Bins Spurs&quot;,&quot;apartment&quot;:&quot;474&quot;,&quot;city&quot;:&quot;Lemkemouth&quot;,&quot;state&quot;:&quot;Pennsylvania&quot;,&quot;zipCode&quot;:74344,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T19:59:07.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T19:59:07.000Z&quot;},{&quot;id&quot;:6774,&quot;country&quot;:&quot;Uzbekistan&quot;,&quot;fullName&quot;:&quot;Rosann Ratke&quot;,&quot;phoneNumber&quot;:&quot;(830) 557-0283 x3452&quot;,&quot;street&quot;:&quot;754 Kilback Common&quot;,&quot;apartment&quot;:&quot;675&quot;,&quot;city&quot;:&quot;Reillyville&quot;,&quot;state&quot;:&quot;Virginia&quot;,&quot;zipCode&quot;:59379,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T20:17:40.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T20:17:40.000Z&quot;},{&quot;id&quot;:6775,&quot;country&quot;:&quot;Indonesia&quot;,&quot;fullName&quot;:&quot;Christiana Mann&quot;,&quot;phoneNumber&quot;:&quot;(210) 484-4985 x1657&quot;,&quot;street&quot;:&quot;277 Fay Parks&quot;,&quot;apartment&quot;:&quot;2475&quot;,&quot;city&quot;:&quot;Mullerside&quot;,&quot;state&quot;:&quot;Georgia&quot;,&quot;zipCode&quot;:90187,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T22:17:04.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T22:17:04.000Z&quot;},{&quot;id&quot;:6776,&quot;country&quot;:&quot;Israel&quot;,&quot;fullName&quot;:&quot;Rashad Muller&quot;,&quot;phoneNumber&quot;:&quot;(305) 206-1374 x9234&quot;,&quot;street&quot;:&quot;110 Orpha Summit&quot;,&quot;apartment&quot;:&quot;405&quot;,&quot;city&quot;:&quot;Nomaview&quot;,&quot;state&quot;:&quot;Maine&quot;,&quot;zipCode&quot;:24384,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T22:39:19.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T22:39:19.000Z&quot;},{&quot;id&quot;:6777,&quot;country&quot;:&quot;Belarus&quot;,&quot;fullName&quot;:&quot;Lionel Klein&quot;,&quot;phoneNumber&quot;:&quot;(949) 712-7244&quot;,&quot;street&quot;:&quot;296 Pfeffer Rue&quot;,&quot;apartment&quot;:&quot;4064&quot;,&quot;city&quot;:&quot;Jinnyville&quot;,&quot;state&quot;:&quot;Arizona&quot;,&quot;zipCode&quot;:34090,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T22:39:59.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T22:39:59.000Z&quot;},{&quot;id&quot;:6778,&quot;country&quot;:&quot;Haiti&quot;,&quot;fullName&quot;:&quot;Trey Senger&quot;,&quot;phoneNumber&quot;:&quot;(775) 508-7615&quot;,&quot;street&quot;:&quot;29133 Lueilwitz Plains&quot;,&quot;apartment&quot;:&quot;09026&quot;,&quot;city&quot;:&quot;Cartwrightport&quot;,&quot;state&quot;:&quot;Illinois&quot;,&quot;zipCode&quot;:41257,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T22:40:46.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T22:40:46.000Z&quot;},{&quot;id&quot;:6779,&quot;country&quot;:&quot;Chad&quot;,&quot;fullName&quot;:&quot;Tanesha Pfannerstill&quot;,&quot;phoneNumber&quot;:&quot;(520) 940-2809 x7150&quot;,&quot;street&quot;:&quot;70501 Tremblay Forge&quot;,&quot;apartment&quot;:&quot;31209&quot;,&quot;city&quot;:&quot;Dotchester&quot;,&quot;state&quot;:&quot;Arizona&quot;,&quot;zipCode&quot;:35124,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T23:04:59.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T23:04:59.000Z&quot;},{&quot;id&quot;:6780,&quot;country&quot;:&quot;Colombia&quot;,&quot;fullName&quot;:&quot;Denver Carroll&quot;,&quot;phoneNumber&quot;:&quot;(702) 619-6612&quot;,&quot;street&quot;:&quot;432 Senger Passage&quot;,&quot;apartment&quot;:&quot;61820&quot;,&quot;city&quot;:&quot;South Fallon&quot;,&quot;state&quot;:&quot;Louisiana&quot;,&quot;zipCode&quot;:1976,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-07T23:07:48.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-07T23:07:48.000Z&quot;},{&quot;id&quot;:6784,&quot;country&quot;:&quot;Qatar&quot;,&quot;fullName&quot;:&quot;Concha Nienow&quot;,&quot;phoneNumber&quot;:&quot;(520) 484-9952 x1032&quot;,&quot;street&quot;:&quot;749 Rempel Springs&quot;,&quot;apartment&quot;:&quot;919&quot;,&quot;city&quot;:&quot;Ernestinefort&quot;,&quot;state&quot;:&quot;Kansas&quot;,&quot;zipCode&quot;:20533,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-08T03:01:08.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-08T03:01:08.000Z&quot;},{&quot;id&quot;:6785,&quot;country&quot;:&quot;El Salvador&quot;,&quot;fullName&quot;:&quot;Kennith Langosh&quot;,&quot;phoneNumber&quot;:&quot;(219) 224-6642 x5964&quot;,&quot;street&quot;:&quot;68351 Pagac River&quot;,&quot;apartment&quot;:&quot;88008&quot;,&quot;city&quot;:&quot;Lake Marc&quot;,&quot;state&quot;:&quot;Alabama&quot;,&quot;zipCode&quot;:35711,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-08T12:47:01.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-08T12:47:01.000Z&quot;},{&quot;id&quot;:6786,&quot;country&quot;:&quot;Spain&quot;,&quot;fullName&quot;:&quot;Kendall Walsh&quot;,&quot;phoneNumber&quot;:&quot;(703) 213-9710&quot;,&quot;street&quot;:&quot;970 Brittni Street&quot;,&quot;apartment&quot;:&quot;334&quot;,&quot;city&quot;:&quot;Leannonside&quot;,&quot;state&quot;:&quot;Kentucky&quot;,&quot;zipCode&quot;:61097,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-08T12:51:18.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-08T12:51:18.000Z&quot;},{&quot;id&quot;:6787,&quot;country&quot;:&quot;Syrian Arab Republic&quot;,&quot;fullName&quot;:&quot;Ronni Hudson&quot;,&quot;phoneNumber&quot;:&quot;(313) 859-3052&quot;,&quot;street&quot;:&quot;54755 Tressa Isle&quot;,&quot;apartment&quot;:&quot;6106&quot;,&quot;city&quot;:&quot;Carrollberg&quot;,&quot;state&quot;:&quot;Rhode Island&quot;,&quot;zipCode&quot;:15954,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-08T12:51:18.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-08T12:51:18.000Z&quot;},{&quot;id&quot;:6797,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Miss Hee McGlynn&quot;,&quot;phoneNumber&quot;:&quot;641.786.8693&quot;,&quot;street&quot;:&quot;6075 Nolan Parks&quot;,&quot;apartment&quot;:&quot;2349&quot;,&quot;city&quot;:&quot;Lake Nicholas&quot;,&quot;state&quot;:&quot;North Dakota&quot;,&quot;zipCode&quot;:21338,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-09T17:18:47.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-09T17:18:47.000Z&quot;},{&quot;id&quot;:6798,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Julian Douglas&quot;,&quot;phoneNumber&quot;:&quot;407.812.2520&quot;,&quot;street&quot;:&quot;003 Dagny Summit&quot;,&quot;apartment&quot;:&quot;8358&quot;,&quot;city&quot;:&quot;Dibbertchester&quot;,&quot;state&quot;:&quot;West Virginia&quot;,&quot;zipCode&quot;:8655,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-09T17:19:28.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-09T17:19:28.000Z&quot;},{&quot;id&quot;:6799,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Glory Mitchell&quot;,&quot;phoneNumber&quot;:&quot;(870) 816-7786&quot;,&quot;street&quot;:&quot;6422 Von Tunnel&quot;,&quot;apartment&quot;:&quot;08170&quot;,&quot;city&quot;:&quot;New Melodee&quot;,&quot;state&quot;:&quot;Florida&quot;,&quot;zipCode&quot;:7532,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-09T17:42:35.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-09T17:42:35.000Z&quot;},{&quot;id&quot;:6800,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Ms  Sydney Lubowitz&quot;,&quot;phoneNumber&quot;:&quot;1-630-415-8806&quot;,&quot;street&quot;:&quot;713 Turner Islands&quot;,&quot;apartment&quot;:&quot;771&quot;,&quot;city&quot;:&quot;West Monte&quot;,&quot;state&quot;:&quot;Arizona&quot;,&quot;zipCode&quot;:64279,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-09T17:43:39.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-09T17:43:39.000Z&quot;},{&quot;id&quot;:6866,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Charmain Olson&quot;,&quot;phoneNumber&quot;:&quot;434.805.0068&quot;,&quot;street&quot;:&quot;0596 Luigi Fork&quot;,&quot;apartment&quot;:&quot;9668&quot;,&quot;city&quot;:&quot;North Effiemouth&quot;,&quot;state&quot;:&quot;Vermont&quot;,&quot;zipCode&quot;:20128,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-17T18:42:19.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-17T18:42:19.000Z&quot;},{&quot;id&quot;:6867,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Tasha Lakin I&quot;,&quot;phoneNumber&quot;:&quot;(419) 608-6224&quot;,&quot;street&quot;:&quot;986 Miesha Parkways&quot;,&quot;apartment&quot;:&quot;876&quot;,&quot;city&quot;:&quot;Lake Ladonnaburgh&quot;,&quot;state&quot;:&quot;Virginia&quot;,&quot;zipCode&quot;:91927,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-17T18:43:21.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-17T18:43:21.000Z&quot;},{&quot;id&quot;:6999,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mr  Santo Gutkowski&quot;,&quot;phoneNumber&quot;:&quot;337.650.8119&quot;,&quot;street&quot;:&quot;66303 Schuster Mews&quot;,&quot;apartment&quot;:&quot;84836&quot;,&quot;city&quot;:&quot;Lake Basil&quot;,&quot;state&quot;:&quot;Colorado&quot;,&quot;zipCode&quot;:47622,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-26T04:35:58.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-26T04:35:58.000Z&quot;},{&quot;id&quot;:7000,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Antony Ziemann&quot;,&quot;phoneNumber&quot;:&quot;352-805-6468&quot;,&quot;street&quot;:&quot;81726 Barton Row&quot;,&quot;apartment&quot;:&quot;681&quot;,&quot;city&quot;:&quot;New Ricardomouth&quot;,&quot;state&quot;:&quot;Maryland&quot;,&quot;zipCode&quot;:38877,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-26T04:36:46.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-26T04:36:46.000Z&quot;},{&quot;id&quot;:7001,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Eulah Rowe&quot;,&quot;phoneNumber&quot;:&quot;336-801-2020&quot;,&quot;street&quot;:&quot;32270 Desmond Island&quot;,&quot;apartment&quot;:&quot;5892&quot;,&quot;city&quot;:&quot;Lake David&quot;,&quot;state&quot;:&quot;Nevada&quot;,&quot;zipCode&quot;:38296,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-26T04:37:38.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-26T04:37:38.000Z&quot;},{&quot;id&quot;:7074,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Lonnie Toy&quot;,&quot;phoneNumber&quot;:&quot;1-308-814-8284&quot;,&quot;street&quot;:&quot;8610 Howell Fields&quot;,&quot;apartment&quot;:&quot;4971&quot;,&quot;city&quot;:&quot;North Erwin&quot;,&quot;state&quot;:&quot;Arkansas&quot;,&quot;zipCode&quot;:533,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-29T21:06:44.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-29T21:06:44.000Z&quot;},{&quot;id&quot;:7075,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Ivory Mann&quot;,&quot;phoneNumber&quot;:&quot;806.914.3376&quot;,&quot;street&quot;:&quot;6662 Emery Extensions&quot;,&quot;apartment&quot;:&quot;31553&quot;,&quot;city&quot;:&quot;Schoenport&quot;,&quot;state&quot;:&quot;Arkansas&quot;,&quot;zipCode&quot;:15644,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-29T21:07:40.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-29T21:07:40.000Z&quot;},{&quot;id&quot;:7076,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Summer Bayer&quot;,&quot;phoneNumber&quot;:&quot;530-909-6645&quot;,&quot;street&quot;:&quot;1224 Ngan Motorway&quot;,&quot;apartment&quot;:&quot;256&quot;,&quot;city&quot;:&quot;Bergebury&quot;,&quot;state&quot;:&quot;Utah&quot;,&quot;zipCode&quot;:23231,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-29T22:21:49.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-29T22:21:49.000Z&quot;},{&quot;id&quot;:7077,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Bruno Bradtke&quot;,&quot;phoneNumber&quot;:&quot;610-703-0654&quot;,&quot;street&quot;:&quot;3898 Will Street&quot;,&quot;apartment&quot;:&quot;34342&quot;,&quot;city&quot;:&quot;New Jeromy&quot;,&quot;state&quot;:&quot;Delaware&quot;,&quot;zipCode&quot;:83758,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-29T22:22:45.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-29T22:22:45.000Z&quot;},{&quot;id&quot;:7087,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Merlin Russel&quot;,&quot;phoneNumber&quot;:&quot;(206) 661-8354&quot;,&quot;street&quot;:&quot;6029 Glover Gardens&quot;,&quot;apartment&quot;:&quot;65769&quot;,&quot;city&quot;:&quot;West Sonny&quot;,&quot;state&quot;:&quot;New Mexico&quot;,&quot;zipCode&quot;:34919,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T01:39:28.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T01:39:28.000Z&quot;},{&quot;id&quot;:7088,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mechelle Johnston&quot;,&quot;phoneNumber&quot;:&quot;330-740-5999&quot;,&quot;street&quot;:&quot;9415 Shanice Parks&quot;,&quot;apartment&quot;:&quot;490&quot;,&quot;city&quot;:&quot;North Shaniceburgh&quot;,&quot;state&quot;:&quot;Indiana&quot;,&quot;zipCode&quot;:52395,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T01:40:26.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T01:40:26.000Z&quot;},{&quot;id&quot;:7089,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Jaime Nader Sr &quot;,&quot;phoneNumber&quot;:&quot;(786) 203-5531&quot;,&quot;street&quot;:&quot;05259 Schultz Village&quot;,&quot;apartment&quot;:&quot;0070&quot;,&quot;city&quot;:&quot;Adanville&quot;,&quot;state&quot;:&quot;Alabama&quot;,&quot;zipCode&quot;:55730,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T01:58:51.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T01:58:51.000Z&quot;},{&quot;id&quot;:7090,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Minh Thompson&quot;,&quot;phoneNumber&quot;:&quot;(919) 218-4340&quot;,&quot;street&quot;:&quot;839 Lester Dam&quot;,&quot;apartment&quot;:&quot;702&quot;,&quot;city&quot;:&quot;East Noreneton&quot;,&quot;state&quot;:&quot;Wyoming&quot;,&quot;zipCode&quot;:19679,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T01:59:40.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T01:59:40.000Z&quot;},{&quot;id&quot;:7091,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Monty Boehm&quot;,&quot;phoneNumber&quot;:&quot;1-541-562-1419&quot;,&quot;street&quot;:&quot;391 Gaylord Ways&quot;,&quot;apartment&quot;:&quot;809&quot;,&quot;city&quot;:&quot;Pacochabury&quot;,&quot;state&quot;:&quot;New Mexico&quot;,&quot;zipCode&quot;:57267,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T02:21:47.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T02:21:47.000Z&quot;},{&quot;id&quot;:7092,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Branden Daugherty&quot;,&quot;phoneNumber&quot;:&quot;(260) 301-3274&quot;,&quot;street&quot;:&quot;2673 Reynolds Brook&quot;,&quot;apartment&quot;:&quot;173&quot;,&quot;city&quot;:&quot;Shareeburgh&quot;,&quot;state&quot;:&quot;Rhode Island&quot;,&quot;zipCode&quot;:69458,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T02:22:48.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T02:22:48.000Z&quot;},{&quot;id&quot;:7093,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Berry Jones&quot;,&quot;phoneNumber&quot;:&quot;1-970-701-5476&quot;,&quot;street&quot;:&quot;341 Sang Tunnel&quot;,&quot;apartment&quot;:&quot;00794&quot;,&quot;city&quot;:&quot;North Jerome&quot;,&quot;state&quot;:&quot;Nevada&quot;,&quot;zipCode&quot;:28975,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T02:27:16.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T02:27:16.000Z&quot;},{&quot;id&quot;:7094,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mauro Rippin&quot;,&quot;phoneNumber&quot;:&quot;616-314-9727&quot;,&quot;street&quot;:&quot;67436 Norbert Extension&quot;,&quot;apartment&quot;:&quot;2323&quot;,&quot;city&quot;:&quot;Stehrshire&quot;,&quot;state&quot;:&quot;Oregon&quot;,&quot;zipCode&quot;:13983,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T02:28:12.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T02:28:12.000Z&quot;},{&quot;id&quot;:7095,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Pete Schumm III&quot;,&quot;phoneNumber&quot;:&quot;1-334-810-7135&quot;,&quot;street&quot;:&quot;252 Harvey Lake&quot;,&quot;apartment&quot;:&quot;475&quot;,&quot;city&quot;:&quot;East Roselia&quot;,&quot;state&quot;:&quot;Michigan&quot;,&quot;zipCode&quot;:49497,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T03:24:40.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T03:24:40.000Z&quot;},{&quot;id&quot;:7096,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Cheryll Mueller&quot;,&quot;phoneNumber&quot;:&quot;1-708-207-7465&quot;,&quot;street&quot;:&quot;25500 Dooley Views&quot;,&quot;apartment&quot;:&quot;54525&quot;,&quot;city&quot;:&quot;Kihnside&quot;,&quot;state&quot;:&quot;Florida&quot;,&quot;zipCode&quot;:70848,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T03:26:05.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T03:26:05.000Z&quot;},{&quot;id&quot;:7097,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Oswaldo Langworth&quot;,&quot;phoneNumber&quot;:&quot;1-847-562-4305&quot;,&quot;street&quot;:&quot;2183 Predovic Club&quot;,&quot;apartment&quot;:&quot;46567&quot;,&quot;city&quot;:&quot;Port Kelvinmouth&quot;,&quot;state&quot;:&quot;Minnesota&quot;,&quot;zipCode&quot;:89893,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T03:34:27.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T03:34:27.000Z&quot;},{&quot;id&quot;:7098,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Cristopher Bergnaum&quot;,&quot;phoneNumber&quot;:&quot;(303) 806-3199&quot;,&quot;street&quot;:&quot;78167 Berge Fords&quot;,&quot;apartment&quot;:&quot;4482&quot;,&quot;city&quot;:&quot;Lake Janett&quot;,&quot;state&quot;:&quot;Wyoming&quot;,&quot;zipCode&quot;:47906,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T03:34:50.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T03:34:50.000Z&quot;},{&quot;id&quot;:7108,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Valerie Greenfelder&quot;,&quot;phoneNumber&quot;:&quot;1-408-732-5137&quot;,&quot;street&quot;:&quot;8486 Huel Spring&quot;,&quot;apartment&quot;:&quot;249&quot;,&quot;city&quot;:&quot;Weimannville&quot;,&quot;state&quot;:&quot;Nevada&quot;,&quot;zipCode&quot;:78572,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T17:45:55.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T17:45:55.000Z&quot;},{&quot;id&quot;:7109,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Randa Bashirian&quot;,&quot;phoneNumber&quot;:&quot;(563) 954-7536&quot;,&quot;street&quot;:&quot;3501 Mann Place&quot;,&quot;apartment&quot;:&quot;52587&quot;,&quot;city&quot;:&quot;New Luis&quot;,&quot;state&quot;:&quot;North Dakota&quot;,&quot;zipCode&quot;:90620,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T17:46:45.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T17:46:45.000Z&quot;},{&quot;id&quot;:7110,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mr  Christal Hane&quot;,&quot;phoneNumber&quot;:&quot;(330) 732-6668&quot;,&quot;street&quot;:&quot;6444 Denita Fort&quot;,&quot;apartment&quot;:&quot;560&quot;,&quot;city&quot;:&quot;Dachmouth&quot;,&quot;state&quot;:&quot;North Carolina&quot;,&quot;zipCode&quot;:4111,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T17:48:33.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T17:48:33.000Z&quot;},{&quot;id&quot;:7111,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Morton Schamberger Sr &quot;,&quot;phoneNumber&quot;:&quot;1-505-860-7597&quot;,&quot;street&quot;:&quot;418 Delaine Track&quot;,&quot;apartment&quot;:&quot;5682&quot;,&quot;city&quot;:&quot;Torptown&quot;,&quot;state&quot;:&quot;Texas&quot;,&quot;zipCode&quot;:65855,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T17:49:20.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T17:49:20.000Z&quot;},{&quot;id&quot;:7112,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Jessenia Zemlak PhD&quot;,&quot;phoneNumber&quot;:&quot;1-281-580-0739&quot;,&quot;street&quot;:&quot;1462 Leena Ports&quot;,&quot;apartment&quot;:&quot;46541&quot;,&quot;city&quot;:&quot;West Sterling&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:50126,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T19:22:29.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T19:22:29.000Z&quot;},{&quot;id&quot;:7113,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Miss Iva Weimann&quot;,&quot;phoneNumber&quot;:&quot;(469) 864-7202&quot;,&quot;street&quot;:&quot;6259 Wyman Extension&quot;,&quot;apartment&quot;:&quot;4480&quot;,&quot;city&quot;:&quot;Olenville&quot;,&quot;state&quot;:&quot;Louisiana&quot;,&quot;zipCode&quot;:52579,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T19:23:16.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T19:23:16.000Z&quot;},{&quot;id&quot;:7114,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Marva Wilkinson&quot;,&quot;phoneNumber&quot;:&quot;1-319-817-6720&quot;,&quot;street&quot;:&quot;51262 Ahmad Vista&quot;,&quot;apartment&quot;:&quot;09750&quot;,&quot;city&quot;:&quot;New Rena&quot;,&quot;state&quot;:&quot;Florida&quot;,&quot;zipCode&quot;:60011,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T21:22:39.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T21:22:39.000Z&quot;},{&quot;id&quot;:7115,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Shaniqua Walker&quot;,&quot;phoneNumber&quot;:&quot;(740) 812-3740&quot;,&quot;street&quot;:&quot;4484 Aretha Causeway&quot;,&quot;apartment&quot;:&quot;22106&quot;,&quot;city&quot;:&quot;Fritschborough&quot;,&quot;state&quot;:&quot;Alabama&quot;,&quot;zipCode&quot;:5,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-30T21:23:37.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-30T21:23:37.000Z&quot;},{&quot;id&quot;:7238,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Sabine Mitchell PhD&quot;,&quot;phoneNumber&quot;:&quot;1-440-302-6706&quot;,&quot;street&quot;:&quot;53059 Emmerich Shores&quot;,&quot;apartment&quot;:&quot;11351&quot;,&quot;city&quot;:&quot;Fredrickhaven&quot;,&quot;state&quot;:&quot;Oregon&quot;,&quot;zipCode&quot;:74520,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-31T21:17:26.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-31T21:17:26.000Z&quot;},{&quot;id&quot;:7239,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Roy Weissnat&quot;,&quot;phoneNumber&quot;:&quot;1-323-571-5249&quot;,&quot;street&quot;:&quot;522 Hilary Shoal&quot;,&quot;apartment&quot;:&quot;38609&quot;,&quot;city&quot;:&quot;Windlerburgh&quot;,&quot;state&quot;:&quot;Iowa&quot;,&quot;zipCode&quot;:95138,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-31T21:18:17.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-31T21:18:17.000Z&quot;},{&quot;id&quot;:7240,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Meaghan Lowe&quot;,&quot;phoneNumber&quot;:&quot;(504) 407-2439&quot;,&quot;street&quot;:&quot;974 Gutmann Plain&quot;,&quot;apartment&quot;:&quot;7542&quot;,&quot;city&quot;:&quot;Morrisside&quot;,&quot;state&quot;:&quot;Texas&quot;,&quot;zipCode&quot;:56492,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-31T21:20:10.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-31T21:20:10.000Z&quot;},{&quot;id&quot;:7242,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Jung Dietrich&quot;,&quot;phoneNumber&quot;:&quot;206-337-8023&quot;,&quot;street&quot;:&quot;000 Ruecker Flat&quot;,&quot;apartment&quot;:&quot;287&quot;,&quot;city&quot;:&quot;Laritaside&quot;,&quot;state&quot;:&quot;Florida&quot;,&quot;zipCode&quot;:79799,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-31T21:21:00.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-31T21:21:00.000Z&quot;},{&quot;id&quot;:7243,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Roderick Stroman&quot;,&quot;phoneNumber&quot;:&quot;520.914.0166&quot;,&quot;street&quot;:&quot;534 Ryan Village&quot;,&quot;apartment&quot;:&quot;8082&quot;,&quot;city&quot;:&quot;Eliseoport&quot;,&quot;state&quot;:&quot;Minnesota&quot;,&quot;zipCode&quot;:6825,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-31T21:22:44.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-31T21:22:44.000Z&quot;},{&quot;id&quot;:7244,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Dr  Carie Sipes&quot;,&quot;phoneNumber&quot;:&quot;1-316-812-5012&quot;,&quot;street&quot;:&quot;854 Schmeler Walks&quot;,&quot;apartment&quot;:&quot;941&quot;,&quot;city&quot;:&quot;East Randallfurt&quot;,&quot;state&quot;:&quot;Utah&quot;,&quot;zipCode&quot;:85396,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-31T21:23:30.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-31T21:23:30.000Z&quot;},{&quot;id&quot;:7469,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Kasey Prohaska DDS&quot;,&quot;phoneNumber&quot;:&quot;626-424-3478&quot;,&quot;street&quot;:&quot;3142 Hoyt Expressway&quot;,&quot;apartment&quot;:&quot;78240&quot;,&quot;city&quot;:&quot;Tomview&quot;,&quot;state&quot;:&quot;Massachusetts&quot;,&quot;zipCode&quot;:6764,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-02T17:55:25.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-02T17:55:25.000Z&quot;},{&quot;id&quot;:7470,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Carl Brakus&quot;,&quot;phoneNumber&quot;:&quot;281-308-9096&quot;,&quot;street&quot;:&quot;624 Zoe Stream&quot;,&quot;apartment&quot;:&quot;9320&quot;,&quot;city&quot;:&quot;New Dakotaberg&quot;,&quot;state&quot;:&quot;Utah&quot;,&quot;zipCode&quot;:42339,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-02T17:56:32.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-02T17:56:32.000Z&quot;},{&quot;id&quot;:7471,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Hettie Schmitt&quot;,&quot;phoneNumber&quot;:&quot;410.206.5177&quot;,&quot;street&quot;:&quot;7492 Mueller Flats&quot;,&quot;apartment&quot;:&quot;008&quot;,&quot;city&quot;:&quot;New Francis&quot;,&quot;state&quot;:&quot;New Jersey&quot;,&quot;zipCode&quot;:19902,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-02T17:58:55.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-02T17:58:55.000Z&quot;},{&quot;id&quot;:7472,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Audria Wolff&quot;,&quot;phoneNumber&quot;:&quot;(530) 859-6745&quot;,&quot;street&quot;:&quot;776 Guadalupe Streets&quot;,&quot;apartment&quot;:&quot;24533&quot;,&quot;city&quot;:&quot;West Ernestinefort&quot;,&quot;state&quot;:&quot;Minnesota&quot;,&quot;zipCode&quot;:20609,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-02T17:59:55.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-02T17:59:55.000Z&quot;},{&quot;id&quot;:7473,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Mason Hammes I&quot;,&quot;phoneNumber&quot;:&quot;954.337.0516&quot;,&quot;street&quot;:&quot;72877 Jamaal Shoals&quot;,&quot;apartment&quot;:&quot;9168&quot;,&quot;city&quot;:&quot;Lake Carrol&quot;,&quot;state&quot;:&quot;Alaska&quot;,&quot;zipCode&quot;:52234,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-02T19:22:27.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-02T19:22:27.000Z&quot;},{&quot;id&quot;:7474,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Yuette Tremblay&quot;,&quot;phoneNumber&quot;:&quot;1-201-616-2576&quot;,&quot;street&quot;:&quot;2468 Dooley Court&quot;,&quot;apartment&quot;:&quot;3497&quot;,&quot;city&quot;:&quot;New Rosalba&quot;,&quot;state&quot;:&quot;West Virginia&quot;,&quot;zipCode&quot;:52548,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-02T19:23:14.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-02T19:23:14.000Z&quot;},{&quot;id&quot;:7492,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Napoleon Casper&quot;,&quot;phoneNumber&quot;:&quot;(316) 571-0130&quot;,&quot;street&quot;:&quot;92015 Kris Track&quot;,&quot;apartment&quot;:&quot;96986&quot;,&quot;city&quot;:&quot;East Fay&quot;,&quot;state&quot;:&quot;Texas&quot;,&quot;zipCode&quot;:94108,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-03T02:42:04.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-03T02:42:04.000Z&quot;},{&quot;id&quot;:7493,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Ms  Maris Ernser&quot;,&quot;phoneNumber&quot;:&quot;980-914-4982&quot;,&quot;street&quot;:&quot;985 Thiel Mission&quot;,&quot;apartment&quot;:&quot;49820&quot;,&quot;city&quot;:&quot;East Wayne&quot;,&quot;state&quot;:&quot;North Carolina&quot;,&quot;zipCode&quot;:6369,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-03T02:42:54.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-03T02:42:54.000Z&quot;},{&quot;id&quot;:7553,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Paris Gaylord DVM&quot;,&quot;phoneNumber&quot;:&quot;480-623-7060&quot;,&quot;street&quot;:&quot;726 Klein Valley&quot;,&quot;apartment&quot;:&quot;28988&quot;,&quot;city&quot;:&quot;West Arnulfo&quot;,&quot;state&quot;:&quot;Oklahoma&quot;,&quot;zipCode&quot;:89723,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-05T21:32:53.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-05T21:32:53.000Z&quot;},{&quot;id&quot;:7554,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Ms  Carlos Feeney&quot;,&quot;phoneNumber&quot;:&quot;724.425.8727&quot;,&quot;street&quot;:&quot;386 Meaghan Mountains&quot;,&quot;apartment&quot;:&quot;5552&quot;,&quot;city&quot;:&quot;South Yolondafurt&quot;,&quot;state&quot;:&quot;Massachusetts&quot;,&quot;zipCode&quot;:82264,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-05T21:34:07.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-05T21:34:07.000Z&quot;},{&quot;id&quot;:7555,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Conrad Hackett&quot;,&quot;phoneNumber&quot;:&quot;518.614.3497&quot;,&quot;street&quot;:&quot;03114 Feeney Locks&quot;,&quot;apartment&quot;:&quot;0441&quot;,&quot;city&quot;:&quot;Martyside&quot;,&quot;state&quot;:&quot;Indiana&quot;,&quot;zipCode&quot;:73520,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-05T21:37:33.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-05T21:37:33.000Z&quot;},{&quot;id&quot;:7556,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Hue Ziemann DDS&quot;,&quot;phoneNumber&quot;:&quot;605-251-1037&quot;,&quot;street&quot;:&quot;4364 McDermott Road&quot;,&quot;apartment&quot;:&quot;6056&quot;,&quot;city&quot;:&quot;Randolphstad&quot;,&quot;state&quot;:&quot;Illinois&quot;,&quot;zipCode&quot;:51544,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-05T21:39:05.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-05T21:39:05.000Z&quot;},{&quot;id&quot;:7598,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Herbert Kling&quot;,&quot;phoneNumber&quot;:&quot;320-719-6116&quot;,&quot;street&quot;:&quot;71510 Stehr Creek&quot;,&quot;apartment&quot;:&quot;6442&quot;,&quot;city&quot;:&quot;Micaelaside&quot;,&quot;state&quot;:&quot;Utah&quot;,&quot;zipCode&quot;:30640,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-06T19:14:50.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-06T19:14:50.000Z&quot;},{&quot;id&quot;:7599,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Rolando Mills&quot;,&quot;phoneNumber&quot;:&quot;989-260-0110&quot;,&quot;street&quot;:&quot;58244 Katia Gateway&quot;,&quot;apartment&quot;:&quot;2871&quot;,&quot;city&quot;:&quot;Shaunmouth&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:20724,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-06T19:15:55.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-06T19:15:55.000Z&quot;},{&quot;id&quot;:7600,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Xavier Aufderhar&quot;,&quot;phoneNumber&quot;:&quot;(210) 470-1117&quot;,&quot;street&quot;:&quot;92646 Cruickshank Spur&quot;,&quot;apartment&quot;:&quot;038&quot;,&quot;city&quot;:&quot;Smithport&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:28484,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-06T19:18:05.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-06T19:18:05.000Z&quot;},{&quot;id&quot;:7601,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Miss Alvin Kertzmann&quot;,&quot;phoneNumber&quot;:&quot;623-205-6576&quot;,&quot;street&quot;:&quot;37268 Shayna Fords&quot;,&quot;apartment&quot;:&quot;274&quot;,&quot;city&quot;:&quot;Port Dexter&quot;,&quot;state&quot;:&quot;Oklahoma&quot;,&quot;zipCode&quot;:43696,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-06T19:18:54.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-06T19:18:54.000Z&quot;},{&quot;id&quot;:7602,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Lanie Smitham&quot;,&quot;phoneNumber&quot;:&quot;351-626-8927&quot;,&quot;street&quot;:&quot;227 Darren Oval&quot;,&quot;apartment&quot;:&quot;2584&quot;,&quot;city&quot;:&quot;Port Asley&quot;,&quot;state&quot;:&quot;Michigan&quot;,&quot;zipCode&quot;:64915,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-06T19:23:17.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-06T19:23:17.000Z&quot;},{&quot;id&quot;:7603,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Latrice Bruen&quot;,&quot;phoneNumber&quot;:&quot;(704) 904-1454&quot;,&quot;street&quot;:&quot;505 Adams Pass&quot;,&quot;apartment&quot;:&quot;00292&quot;,&quot;city&quot;:&quot;South Claystad&quot;,&quot;state&quot;:&quot;Oregon&quot;,&quot;zipCode&quot;:14593,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-06T19:24:03.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-06T19:24:03.000Z&quot;},{&quot;id&quot;:7614,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Caterina Luettgen&quot;,&quot;phoneNumber&quot;:&quot;(863) 310-0942&quot;,&quot;street&quot;:&quot;343 Botsford Squares&quot;,&quot;apartment&quot;:&quot;257&quot;,&quot;city&quot;:&quot;Dooleyton&quot;,&quot;state&quot;:&quot;Louisiana&quot;,&quot;zipCode&quot;:14289,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-07T00:58:20.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-07T00:58:20.000Z&quot;},{&quot;id&quot;:7615,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Elbert Walker&quot;,&quot;phoneNumber&quot;:&quot;(763) 682-4581&quot;,&quot;street&quot;:&quot;500 Millie Valleys&quot;,&quot;apartment&quot;:&quot;8090&quot;,&quot;city&quot;:&quot;Schillerborough&quot;,&quot;state&quot;:&quot;Texas&quot;,&quot;zipCode&quot;:1156,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-07T00:59:14.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-07T00:59:14.000Z&quot;},{&quot;id&quot;:7616,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Kabob Maza&quot;,&quot;phoneNumber&quot;:&quot;0787931984&quot;,&quot;street&quot;:&quot;8642 Yule Street, Arvada CO&quot;,&quot;apartment&quot;:&quot;H.no 15&quot;,&quot;city&quot;:&quot;Kabul&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:30012,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-07T04:20:07.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-07T04:20:07.000Z&quot;},{&quot;id&quot;:7617,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;Kabob Maza&quot;,&quot;phoneNumber&quot;:&quot;0787931984&quot;,&quot;street&quot;:&quot;8642 Yule Street, Arvada CO&quot;,&quot;apartment&quot;:&quot;H.no 15&quot;,&quot;city&quot;:&quot;Kabul&quot;,&quot;state&quot;:&quot;Washington&quot;,&quot;zipCode&quot;:30012,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-07T04:20:14.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-07T04:20:14.000Z&quot;},{&quot;id&quot;:7619,&quot;country&quot;:&quot;Eritrea&quot;,&quot;fullName&quot;:&quot;Elwood Kertzmann&quot;,&quot;phoneNumber&quot;:&quot;(704) 802-9469 x2979&quot;,&quot;street&quot;:&quot;4873 Block Stream&quot;,&quot;apartment&quot;:&quot;216&quot;,&quot;city&quot;:&quot;New Estellaton&quot;,&quot;state&quot;:&quot;Nebraska&quot;,&quot;zipCode&quot;:22377,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-07T05:46:30.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-07T05:46:30.000Z&quot;},{&quot;id&quot;:7620,&quot;country&quot;:&quot;New Caledonia&quot;,&quot;fullName&quot;:&quot;Levi Yost&quot;,&quot;phoneNumber&quot;:&quot;(508) 614-4300&quot;,&quot;street&quot;:&quot;5127 Palma Glens&quot;,&quot;apartment&quot;:&quot;907&quot;,&quot;city&quot;:&quot;Schaeferbury&quot;,&quot;state&quot;:&quot;Florida&quot;,&quot;zipCode&quot;:5358,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-07T06:00:00.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-07T06:00:00.000Z&quot;},{&quot;id&quot;:7621,&quot;country&quot;:&quot;Brunei Darussalam&quot;,&quot;fullName&quot;:&quot;Lanell Goldner&quot;,&quot;phoneNumber&quot;:&quot;(480) 806-9517&quot;,&quot;street&quot;:&quot;8337 Kuhn Locks&quot;,&quot;apartment&quot;:&quot;6886&quot;,&quot;city&quot;:&quot;Delilahfurt&quot;,&quot;state&quot;:&quot;New Hampshire&quot;,&quot;zipCode&quot;:9901,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-06-07T06:04:13.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-07T06:04:13.000Z&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">23:04:13.430 [print] 6683 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.write(response,&#39;address.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">23:04:13.457 write to file: target\address.json
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:38]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">putAddress</a><a class="badge badge-primary" href="karate-tags.html">Regression</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:38]</span>
+                <span class="scenario-name">put (update) address API test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>389</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:38]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url appUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:04:13.461 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenRetail = callonce read(&quot;getToken.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenRetail.response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-access-token = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def addressId = read(&#39;file:./target/address.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = addressId[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateData = Java.type(&quot;test.DataGenerator&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def country = generateData.getCountry()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def fullName = generateData.getFullName()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def phoneNumber = generateData.getPhoneNumber()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def street = generateData.getStreet()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def apartment = generateData.getApartment()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def city = generateData.getCity()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def state = generateData.getState()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def zipCode = generateData.getZipCode()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/address/&quot;+id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>param id = id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">378</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.53">23:04:13.475 request:
+1 &gt; PUT https://tek-retail-api.azurewebsites.net/address/6683?id=6683
+1 &gt; x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3BvbmdlQm9iIiwiZW1haWwiOiJTcG9uZ2VCb2JzczQ2QHRla3NjaG9vbC51cyIsInVzZXJJZCI6Mjk5Miwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjoyODY0LCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNjg2MTE3ODUyfQ.j6rmUk81aYrQm9xax8ltVjvAgga503TJ6UeZOpkJUkA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 184
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;country&quot;:&quot;Vanuatu&quot;,&quot;fullName&quot;:&quot;Marin Batz&quot;,&quot;phoneNumber&quot;:&quot;(619) 740-9150 x9502&quot;,&quot;street&quot;:&quot;387 Noel Corners&quot;,&quot;apartment&quot;:&quot;668&quot;,&quot;city&quot;:&quot;West Hisako&quot;,&quot;state&quot;:&quot;Nevada&quot;,&quot;zipCode&quot;:&quot;96068&quot;}
+
+23:04:13.851 response time in milliseconds: 376
+1 &lt; 200
+1 &lt; Content-Length: 302
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 07 Jun 2023 06:04:13 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;12e-GkVUvnVXoaDaSf41XZCNDqLgZPY&quot;
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:6683,&quot;country&quot;:&quot;Vanuatu&quot;,&quot;fullName&quot;:&quot;Marin Batz&quot;,&quot;phoneNumber&quot;:&quot;(619) 740-9150 x9502&quot;,&quot;street&quot;:&quot;387 Noel Corners&quot;,&quot;apartment&quot;:&quot;668&quot;,&quot;city&quot;:&quot;West Hisako&quot;,&quot;state&quot;:&quot;Nevada&quot;,&quot;zipCode&quot;:96068,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:09:56.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-06-07T06:04:13.000Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:57]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Regression</a><a class="badge badge-primary" href="karate-tags.html">deleteAddress</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:57]</span>
+                <span class="scenario-name">delete Address</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>361</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:57]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:57]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url appUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:04:13.857 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:57]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenRetail = callonce read(&quot;getToken.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:57]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenRetail.response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:57]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-access-token = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:57]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def addressId = read(&#39;file:./target/address.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = addressId[1].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/address/&quot;+id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>param id = id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">358</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.61">23:04:13.861 request:
+1 &gt; DELETE https://tek-retail-api.azurewebsites.net/address/6686?id=6686
+1 &gt; x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3BvbmdlQm9iIiwiZW1haWwiOiJTcG9uZ2VCb2JzczQ2QHRla3NjaG9vbC51cyIsInVzZXJJZCI6Mjk5Miwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjoyODY0LCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNjg2MTE3ODUyfQ.j6rmUk81aYrQm9xax8ltVjvAgga503TJ6UeZOpkJUkA
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:04:14.217 response time in milliseconds: 356
+1 &lt; 200
+1 &lt; Content-Length: 293
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 07 Jun 2023 06:04:14 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;125-iq+5CIevBAv1wTvnPQkdFlwGmcg&quot;
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:6686,&quot;country&quot;:&quot;Panama&quot;,&quot;fullName&quot;:&quot;Emmaline Abbott&quot;,&quot;phoneNumber&quot;:&quot;1234567890&quot;,&quot;street&quot;:&quot;123 fake st&quot;,&quot;apartment&quot;:&quot;1&quot;,&quot;city&quot;:&quot;Panama City&quot;,&quot;state&quot;:&quot;Los Santos&quot;,&quot;zipCode&quot;:17118,&quot;userId&quot;:2992,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-05-05T16:11:50.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-05-05T16:11:50.000Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

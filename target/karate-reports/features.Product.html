@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("22ea30f7-dd77-4be9-8546-7cdd170b904a",{name:"sahel"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.Product</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-06-06 11:04:20 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>get all products</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/Product.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">products  Tek Retail API testing</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Regression</a><a class="badge badge-primary" href="karate-tags.html">getProducts</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">get all products</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>835</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url appUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:04:19.403 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenRetail = callonce read(&quot;getToken.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">497</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">23:04:19.900 &lt;&lt; lock released, cached callonce: read(&quot;getToken.feature&quot;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.getToken</div>
+      </div>
+      <div class="time-cell passed">494</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url appUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.5">23:04:19.404 &gt;&gt; lock acquired, begin callonce: read(&quot;getToken.feature&quot;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/auth/login&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>request {&quot;email&quot; : &quot;SpongeBobss46@tekschool.us&quot;, &quot;password&quot; : &quot;Test12345$&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">494</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.8">23:04:19.407 request:
+1 &gt; POST https://tek-retail-api.azurewebsites.net/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 62
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;SpongeBobss46@tekschool.us&quot;,&quot;password&quot;:&quot;Test12345$&quot;}
+
+23:04:19.899 response time in milliseconds: 492
+1 &lt; 200
+1 &lt; Content-Length: 406
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 07 Jun 2023 06:04:20 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;196-vHLYk6zFsvqIgFHkf17f4ClJNjo&quot;
+1 &lt; X-Powered-By: Express
+{&quot;name&quot;:&quot;SpongeBob&quot;,&quot;email&quot;:&quot;SpongeBobss46@tekschool.us&quot;,&quot;userId&quot;:2992,&quot;role&quot;:&quot;customer&quot;,&quot;roleId&quot;:2864,&quot;phoneNumber&quot;:null,&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3BvbmdlQm9iIiwiZW1haWwiOiJTcG9uZ2VCb2JzczQ2QHRla3NjaG9vbC51cyIsInVzZXJJZCI6Mjk5Miwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjoyODY0LCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNjg2MTE3ODYwfQ.qN8RFSMOqmxMCVgv7ktj51ZT6Qwl3pdY1mr8FgOARSE&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.email == &#39;SpongeBobss46@tekschool.us&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.11">23:04:19.900 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3BvbmdlQm9iIiwiZW1haWwiOiJTcG9uZ2VCb2JzczQ2QHRla3NjaG9vbC51cyIsInVzZXJJZCI6Mjk5Miwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjoyODY0LCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNjg2MTE3ODYwfQ.qN8RFSMOqmxMCVgv7ktj51ZT6Qwl3pdY1mr8FgOARSE 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenRetail.response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-access-token = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/product&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">338</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">23:04:19.901 request:
+1 &gt; GET https://tek-retail-api.azurewebsites.net/product
+1 &gt; x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3BvbmdlQm9iIiwiZW1haWwiOiJTcG9uZ2VCb2JzczQ2QHRla3NjaG9vbC51cyIsInVzZXJJZCI6Mjk5Miwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjoyODY0LCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNjg2MTE3ODYwfQ.qN8RFSMOqmxMCVgv7ktj51ZT6Qwl3pdY1mr8FgOARSE
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:04:20.236 response time in milliseconds: 334
+1 &lt; 200
+1 &lt; Content-Length: 16201
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 07 Jun 2023 06:04:20 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;3f49-q9GxbuTZiyfnWJcYm9b9Ou7bGsA&quot;
+1 &lt; X-Powered-By: Express
+[{&quot;id&quot;:1,&quot;name&quot;:&quot;TCL 55\&quot; Class 4-Series Smart Roku TV &quot;,&quot;rating&quot;:2.8,&quot;imageUrl&quot;:&quot;/images/products/6_1.jpg&quot;,&quot;sellerId&quot;:16,&quot;companyName&quot;:&quot;extend revolutionary interfaces&quot;,&quot;price&quot;:319},{&quot;id&quot;:2,&quot;name&quot;:&quot;Insignia 32-inch Class F20 Series Smart HD 720p Fire TV &quot;,&quot;rating&quot;:3.4,&quot;imageUrl&quot;:&quot;/images/products/6_3.jpg&quot;,&quot;sellerId&quot;:6,&quot;companyName&quot;:&quot;seize vertical deliverables&quot;,&quot;price&quot;:119},{&quot;id&quot;:3,&quot;name&quot;:&quot;TCL 32-inch 3-Series 720p Roku Smart TV - 32S335, 2021 Model&quot;,&quot;rating&quot;:2.9,&quot;imageUrl&quot;:&quot;/images/products/6_2.jpg&quot;,&quot;sellerId&quot;:13,&quot;companyName&quot;:&quot;redefine e-business web services&quot;,&quot;price&quot;:139},{&quot;id&quot;:4,&quot;name&quot;:&quot;LG OLED C1 Series 65 Smart TV&quot;,&quot;rating&quot;:2,&quot;imageUrl&quot;:&quot;/images/products/6_4.jpg&quot;,&quot;sellerId&quot;:15,&quot;companyName&quot;:&quot;cultivate extensible niches&quot;,&quot;price&quot;:1596},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hisense U8H QLED Series Smart TV &quot;,&quot;rating&quot;:2.2,&quot;imageUrl&quot;:&quot;/images/products/6_5.jpg&quot;,&quot;sellerId&quot;:17,&quot;companyName&quot;:&quot;deploy synergistic content&quot;,&quot;price&quot;:649.99},{&quot;id&quot;:6,&quot;name&quot;:&quot;Amazon Fire TV &quot;,&quot;rating&quot;:1.3,&quot;imageUrl&quot;:&quot;/images/products/6_6.jpg&quot;,&quot;sellerId&quot;:18,&quot;companyName&quot;:&quot;transform efficient paradigms&quot;,&quot;price&quot;:699},{&quot;id&quot;:7,&quot;name&quot;:&quot;Sony HD TV &quot;,&quot;rating&quot;:3.3,&quot;imageUrl&quot;:&quot;/images/products/6_7.jpg&quot;,&quot;sellerId&quot;:13,&quot;companyName&quot;:&quot;redefine e-business web services&quot;,&quot;price&quot;:4498},{&quot;id&quot;:8,&quot;name&quot;:&quot;VIZIO D-Series Smart TV &quot;,&quot;rating&quot;:1.8,&quot;imageUrl&quot;:&quot;/images/products/6_8.jpg&quot;,&quot;sellerId&quot;:16,&quot;companyName&quot;:&quot;extend revolutionary interfaces&quot;,&quot;price&quot;:196},{&quot;id&quot;:9,&quot;name&quot;:&quot;Toshiba V35 Series Smart Fire TV &quot;,&quot;rating&quot;:2.5,&quot;imageUrl&quot;:&quot;/images/products/6_9.jpg&quot;,&quot;sellerId&quot;:12,&quot;companyName&quot;:&quot;innovate back-end interfaces&quot;,&quot;price&quot;:129},{&quot;id&quot;:10,&quot;name&quot;:&quot;RCA 15 HDTV&quot;,&quot;rating&quot;:4.8,&quot;imageUrl&quot;:&quot;/images/products/6_10.jpg&quot;,&quot;sellerId&quot;:12,&quot;companyName&quot;:&quot;innovate back-end interfaces&quot;,&quot;price&quot;:219},{&quot;id&quot;:11,&quot;name&quot;:&quot;PlayStation 5 Console&quot;,&quot;rating&quot;:2.2,&quot;imageUrl&quot;:&quot;/images/products/7_1.jpg&quot;,&quot;sellerId&quot;:8,&quot;companyName&quot;:&quot;monetize out-of-the-box action-items&quot;,&quot;price&quot;:229},{&quot;id&quot;:12,&quot;name&quot;:&quot;Teenage Mutant Ninja Turtles Cowabunga Collection NSW&quot;,&quot;rating&quot;:4.7,&quot;imageUrl&quot;:&quot;/images/products/7_2.jpg&quot;,&quot;sellerId&quot;:12,&quot;companyName&quot;:&quot;innovate back-end interfaces&quot;,&quot;price&quot;:39.99},{&quot;id&quot;:13,&quot;name&quot;:&quot;Trading Card Binder for Pokemon&quot;,&quot;rating&quot;:3.8,&quot;imageUrl&quot;:&quot;/images/products/7_3.jpg&quot;,&quot;sellerId&quot;:1,&quot;companyName&quot;:&quot;streamline impactful synergies&quot;,&quot;price&quot;:17},{&quot;id&quot;:14,&quot;name&quot;:&quot;Xbox Series X&quot;,&quot;rating&quot;:2.8,&quot;imageUrl&quot;:&quot;/images/products/7_4.jpg&quot;,&quot;sellerId&quot;:12,&quot;companyName&quot;:&quot;innovate back-end interfaces&quot;,&quot;price&quot;:500},{&quot;id&quot;:15,&quot;name&quot;:&quot;Pokémon Legends: Arceus - Nintendo Switch&quot;,&quot;rating&quot;:2.1,&quot;imageUrl&quot;:&quot;/images/products/7_5.jpg&quot;,&quot;sellerId&quot;:18,&quot;companyName&quot;:&quot;transform efficient paradigms&quot;,&quot;price&quot;:10},{&quot;id&quot;:16,&quot;name&quot;:&quot;Roblox Digital Gift Card &quot;,&quot;rating&quot;:1.3,&quot;imageUrl&quot;:&quot;/images/products/7_6.jpg&quot;,&quot;sellerId&quot;:14,&quot;companyName&quot;:&quot;embrace enterprise action-items&quot;,&quot;price&quot;:10},{&quot;id&quot;:17,&quot;name&quot;:&quot;VALORANT $10 Gift Card&quot;,&quot;rating&quot;:2.1,&quot;imageUrl&quot;:&quot;/images/products/7_7.jpg&quot;,&quot;sellerId&quot;:1,&quot;companyName&quot;:&quot;streamline impactful synergies&quot;,&quot;price&quot;:10},{&quot;id&quot;:18,&quot;name&quot;:&quot;Apex Legends - 1,000 Apex Coins&quot;,&quot;rating&quot;:3.4,&quot;imageUrl&quot;:&quot;/images/products/7_8.jpg&quot;,&quot;sellerId&quot;:6,&quot;companyName&quot;:&quot;seize vertical deliverables&quot;,&quot;price&quot;:9.99},{&quot;id&quot;:19,&quot;name&quot;:&quot;NPET K10 Gaming Keyboard&quot;,&quot;rating&quot;:1.9,&quot;imageUrl&quot;:&quot;/images/products/7_9.jpg&quot;,&quot;sellerId&quot;:16,&quot;companyName&quot;:&quot;extend revolutionary interfaces&quot;,&quot;price&quot;:19.99},{&quot;id&quot;:20,&quot;name&quot;:&quot;EKSA StarEngine Wired Gaming Headset&quot;,&quot;rating&quot;:2,&quot;imageUrl&quot;:&quot;/images/products/7_10.jpg&quot;,&quot;sellerId&quot;:19,&quot;companyName&quot;:&quot;synergize enterprise mindshare&quot;,&quot;price&quot;:69.99},{&quot;id&quot;:21,&quot;name&quot;:&quot;Switch Game Case with 24 Game Holder&quot;,&quot;rating&quot;:4.7,&quot;imageUrl&quot;:&quot;/images/products/7_11.jpg&quot;,&quot;sellerId&quot;:8,&quot;companyName&quot;:&quot;monetize out-of-the-box action-items&quot;,&quot;price&quot;:13.99},{&quot;id&quot;:22,&quot;name&quot;:&quot;Drawing Tablet-XP-Pen G430S OSU &quot;,&quot;rating&quot;:1.7,&quot;imageUrl&quot;:&quot;/images/products/8_1.jpg&quot;,&quot;sellerId&quot;:17,&quot;companyName&quot;:&quot;deploy synergistic content&quot;,&quot;price&quot;:25.99},{&quot;id&quot;:23,&quot;name&quot;:&quot;Wireless Keyboard and Mouse Combo Backlit&quot;,&quot;rating&quot;:1.7,&quot;imageUrl&quot;:&quot;/images/products/8_2.jpg&quot;,&quot;sellerId&quot;:2,&quot;companyName&quot;:&quot;implement ubiquitous experiences&quot;,&quot;price&quot;:30.39},{&quot;id&quot;:24,&quot;name&quot;:&quot;Logitech MK270 Wireless Keyboard And Mouse Combo&quot;,&quot;rating&quot;:4.9,&quot;imageUrl&quot;:&quot;/images/products/8_3.jpg&quot;,&quot;sellerId&quot;:16,&quot;companyName&quot;:&quot;extend revolutionary interfaces&quot;,&quot;price&quot;:27.99},{&quot;id&quot;:25,&quot;name&quot;:&quot;USB Microphone&quot;,&quot;rating&quot;:4.9,&quot;imageUrl&quot;:&quot;/images/products/8_4.jpg&quot;,&quot;sellerId&quot;:5,&quot;companyName&quot;:&quot;enhance best-of-breed applications&quot;,&quot;price&quot;:29},{&quot;id&quot;:26,&quot;name&quot;:&quot;Logitech C920x HD Pro Webcam&quot;,&quot;rating&quot;:4.4,&quot;imageUrl&quot;:&quot;/images/products/8_5.jpg&quot;,&quot;sellerId&quot;:6,&quot;companyName&quot;:&quot;seize vertical deliverables&quot;,&quot;price&quot;:69},{&quot;id&quot;:27,&quot;name&quot;:&quot;Webcam HD 1080p Web Camera&quot;,&quot;rating&quot;:1.1,&quot;imageUrl&quot;:&quot;/images/products/8_6.jpg&quot;,&quot;sellerId&quot;:16,&quot;companyName&quot;:&quot;extend revolutionary interfaces&quot;,&quot;price&quot;:27},{&quot;id&quot;:28,&quot;name&quot;:&quot;512GB SD Card Class 10 &quot;,&quot;rating&quot;:3,&quot;imageUrl&quot;:&quot;/images/products/8_7.jpg&quot;,&quot;sellerId&quot;:6,&quot;companyName&quot;:&quot;seize vertical deliverables&quot;,&quot;price&quot;:29},{&quot;id&quot;:29,&quot;name&quot;:&quot;SanDisk 128GB Ultra microSDXC UHS-I Memory Card&quot;,&quot;rating&quot;:4,&quot;imageUrl&quot;:&quot;/images/products/8_8.jpg&quot;,&quot;sellerId&quot;:3,&quot;companyName&quot;:&quot;matrix rich e-commerce&quot;,&quot;price&quot;:17},{&quot;id&quot;:30,&quot;name&quot;:&quot;TP-Link TL-SM5110-SR Transceiver&quot;,&quot;rating&quot;:1.5,&quot;imageUrl&quot;:&quot;/images/products/9_1.jpg&quot;,&quot;sellerId&quot;:14,&quot;companyName&quot;:&quot;embrace enterprise action-items&quot;,&quot;price&quot;:19},{&quot;id&quot;:31,&quot;name&quot;:&quot;Gigabit Ethernet Multi-Mode LC Fiber Media Converter&quot;,&quot;rating&quot;:1.1,&quot;imageUrl&quot;:&quot;/images/products/9_2.jpg&quot;,&quot;sellerId&quot;:19,&quot;companyName&quot;:&quot;synergize enterprise mindshare&quot;,&quot;price&quot;:35},{&quot;id&quot;:32,&quot;name&quot;:&quot;Wireless USB WiFi Adapter&quot;,&quot;rating&quot;:4.1,&quot;imageUrl&quot;:&quot;/images/products/9_3.jpg&quot;,&quot;sellerId&quot;:6,&quot;companyName&quot;:&quot;seize vertical deliverables&quot;,&quot;price&quot;:20.94},{&quot;id&quot;:33,&quot;name&quot;:&quot;Cisco Catalyst 2960CX-8PC-L Network Switch&quot;,&quot;rating&quot;:1.9,&quot;imageUrl&quot;:&quot;/images/products/9_4.jpg&quot;,&quot;sellerId&quot;:3,&quot;companyName&quot;:&quot;matrix rich e-commerce&quot;,&quot;price&quot;:833},{&quot;id&quot;:34,&quot;name&quot;:&quot;NETGEAR 8-Port Gigabit Ethernet Unmanaged Switch (GS308) &quot;,&quot;rating&quot;:2.4,&quot;imageUrl&quot;:&quot;/images/products/9_5.jpg&quot;,&quot;sellerId&quot;:15,&quot;companyName&quot;:&quot;cultivate extensible niches&quot;,&quot;price&quot;:19},{&quot;id&quot;:35,&quot;name&quot;:&quot;Multi Port USB Splitter&quot;,&quot;rating&quot;:3.8,&quot;imageUrl&quot;:&quot;/images/products/9_6.jpg&quot;,&quot;sellerId&quot;:1,&quot;companyName&quot;:&quot;streamline impactful synergies&quot;,&quot;price&quot;:9.89},{&quot;id&quot;:36,&quot;name&quot;:&quot;Amazon eero mesh WiFi router&quot;,&quot;rating&quot;:4.8,&quot;imageUrl&quot;:&quot;/images/products/9_7.jpg&quot;,&quot;sellerId&quot;:12,&quot;companyName&quot;:&quot;innovate back-end interfaces&quot;,&quot;price&quot;:69},{&quot;id&quot;:37,&quot;name&quot;:&quot;MA-ANT-3-A6 Cisco Meraki Antenna Set&quot;,&quot;rating&quot;:4.4,&quot;imageUrl&quot;:&quot;/images/products/9_8.jpg&quot;,&quot;sellerId&quot;:19,&quot;companyName&quot;:&quot;synergize enterprise mindshare&quot;,&quot;price&quot;:175.45},{&quot;id&quot;:38,&quot;name&quot;:&quot;Data Server Rack Cabinet&quot;,&quot;rating&quot;:3.2,&quot;imageUrl&quot;:&quot;/images/products/9_9.jpg&quot;,&quot;sellerId&quot;:9,&quot;companyName&quot;:&quot;recontextualize user-centric web services&quot;,&quot;price&quot;:279},{&quot;id&quot;:39,&quot;name&quot;:&quot;Ubiquiti UniFi 6 Pro Access Point&quot;,&quot;rating&quot;:3.7,&quot;imageUrl&quot;:&quot;/images/products/9_10.jpg&quot;,&quot;sellerId&quot;:12,&quot;companyName&quot;:&quot;innovate back-end interfaces&quot;,&quot;price&quot;:195},{&quot;id&quot;:40,&quot;name&quot;:&quot;GE CYNC Smart LED Light Bulb&quot;,&quot;rating&quot;:4.8,&quot;imageUrl&quot;:&quot;/images/products/10_1.jpg&quot;,&quot;sellerId&quot;:18,&quot;companyName&quot;:&quot;transform efficient paradigms&quot;,&quot;price&quot;:23.06},{&quot;id&quot;:41,&quot;name&quot;:&quot;Lutron Caséta Deluxe Smart Dimmer Switch &quot;,&quot;rating&quot;:2.6,&quot;imageUrl&quot;:&quot;/images/products/10_2.jpg&quot;,&quot;sellerId&quot;:6,&quot;companyName&quot;:&quot;seize vertical deliverables&quot;,&quot;price&quot;:169.9},{&quot;id&quot;:42,&quot;name&quot;:&quot;Kasa Smart Light Switch HS200&quot;,&quot;rating&quot;:1.6,&quot;imageUrl&quot;:&quot;/images/products/10_3.jpg&quot;,&quot;sellerId&quot;:6,&quot;companyName&quot;:&quot;seize vertical deliverables&quot;,&quot;price&quot;:14.99},{&quot;id&quot;:43,&quot;name&quot;:&quot;Lutron Pico Smart Remote Control &quot;,&quot;rating&quot;:5,&quot;imageUrl&quot;:&quot;/images/products/10_4.jpg&quot;,&quot;sellerId&quot;:11,&quot;companyName&quot;:&quot;e-enable turn-key blockchains&quot;,&quot;price&quot;:19},{&quot;id&quot;:44,&quot;name&quot;:&quot;DAYBETTER Smart WiFi Led Lights&quot;,&quot;rating&quot;:2.4,&quot;imageUrl&quot;:&quot;/images/products/10_5.jpg&quot;,&quot;sellerId&quot;:10,&quot;companyName&quot;:&quot;transform collaborative niches&quot;,&quot;price&quot;:29.99},{&quot;id&quot;:45,&quot;name&quot;:&quot;Smart Star Projector Galaxy Light&quot;,&quot;rating&quot;:3.7,&quot;imageUrl&quot;:&quot;/images/products/10_6.jpg&quot;,&quot;sellerId&quot;:12,&quot;companyName&quot;:&quot;innovate back-end interfaces&quot;,&quot;price&quot;:59.9},{&quot;id&quot;:46,&quot;name&quot;:&quot;Amazon Basics Smart In-Wall Outlet&quot;,&quot;rating&quot;:3.3,&quot;imageUrl&quot;:&quot;/images/products/11_1.jpg&quot;,&quot;sellerId&quot;:14,&quot;companyName&quot;:&quot;embrace enterprise action-items&quot;,&quot;price&quot;:21},{&quot;id&quot;:47,&quot;name&quot;:&quot;Wemo Mini Smart Plug&quot;,&quot;rating&quot;:3.8,&quot;imageUrl&quot;:&quot;/images/products/11_2.jpg&quot;,&quot;sellerId&quot;:8,&quot;companyName&quot;:&quot;monetize out-of-the-box action-items&quot;,&quot;price&quot;:15},{&quot;id&quot;:48,&quot;name&quot;:&quot;Kasa Outdoor Smart Plug&quot;,&quot;rating&quot;:4.7,&quot;imageUrl&quot;:&quot;/images/products/11_3.jpg&quot;,&quot;sellerId&quot;:12,&quot;companyName&quot;:&quot;innovate back-end interfaces&quot;,&quot;price&quot;:19.99},{&quot;id&quot;:49,&quot;name&quot;:&quot;Mini Smart Plug&quot;,&quot;rating&quot;:1.5,&quot;imageUrl&quot;:&quot;/images/products/11_4.jpg&quot;,&quot;sellerId&quot;:4,&quot;companyName&quot;:&quot;disintermediate next-generation schemas&quot;,&quot;price&quot;:20.56},{&quot;id&quot;:50,&quot;name&quot;:&quot;Meross Wi-Fi Smart Plug Mini&quot;,&quot;rating&quot;:4.6,&quot;imageUrl&quot;:&quot;/images/products/11_5.jpg&quot;,&quot;sellerId&quot;:18,&quot;companyName&quot;:&quot;transform efficient paradigms&quot;,&quot;price&quot;:16.55},{&quot;id&quot;:51,&quot;name&quot;:&quot;ERS Sport Outdoor Hiking Beach Gym Mesh Bag, Black&quot;,&quot;rating&quot;:4.5,&quot;imageUrl&quot;:&quot;/images/products/12_1.jpg&quot;,&quot;sellerId&quot;:14,&quot;companyName&quot;:&quot;embrace enterprise action-items&quot;,&quot;price&quot;:11},{&quot;id&quot;:52,&quot;name&quot;:&quot;Ringside Hanging Gloves Gym Bag&quot;,&quot;rating&quot;:3.5,&quot;imageUrl&quot;:&quot;/images/products/12_2.jpg&quot;,&quot;sellerId&quot;:16,&quot;companyName&quot;:&quot;extend revolutionary interfaces&quot;,&quot;price&quot;:59.99},{&quot;id&quot;:53,&quot;name&quot;:&quot;adidas mens Athletic Cushioned Crew Socks&quot;,&quot;rating&quot;:2.9,&quot;imageUrl&quot;:&quot;/images/products/12_3.jpg&quot;,&quot;sellerId&quot;:14,&quot;companyName&quot;:&quot;embrace enterprise action-items&quot;,&quot;price&quot;:40.95},{&quot;id&quot;:54,&quot;name&quot;:&quot;Gonii Performance Crew Athletic Socks Women&#39;s Hiking Running Cushioned Socks 5-6 Pairs&quot;,&quot;rating&quot;:2.1,&quot;imageUrl&quot;:&quot;/images/products/12_4.jpg&quot;,&quot;sellerId&quot;:3,&quot;companyName&quot;:&quot;matrix rich e-commerce&quot;,&quot;price&quot;:17.99},{&quot;id&quot;:55,&quot;name&quot;:&quot;Under Armour Men&#39;s Playoff 2.0 Golf Polo&quot;,&quot;rating&quot;:5,&quot;imageUrl&quot;:&quot;/images/products/12_5.jpg&quot;,&quot;sellerId&quot;:18,&quot;companyName&quot;:&quot;transform efficient paradigms&quot;,&quot;price&quot;:35},{&quot;id&quot;:56,&quot;name&quot;:&quot;TIDEWE Hunting Clothes for Men&quot;,&quot;rating&quot;:2.6,&quot;imageUrl&quot;:&quot;/images/products/12_6.jpg&quot;,&quot;sellerId&quot;:6,&quot;companyName&quot;:&quot;seize vertical deliverables&quot;,&quot;price&quot;:125.99},{&quot;id&quot;:57,&quot;name&quot;:&quot;AUSCAMOTEK Camo Hunting Backpack and Fanny Pack Waterproof&quot;,&quot;rating&quot;:3,&quot;imageUrl&quot;:&quot;/images/products/12_7.jpg&quot;,&quot;sellerId&quot;:11,&quot;companyName&quot;:&quot;e-enable turn-key blockchains&quot;,&quot;price&quot;:27.99},{&quot;id&quot;:58,&quot;name&quot;:&quot;Zero Restriction Power Torque Jacket&quot;,&quot;rating&quot;:4.3,&quot;imageUrl&quot;:&quot;/images/products/12_8.jpg&quot;,&quot;sellerId&quot;:15,&quot;companyName&quot;:&quot;cultivate extensible niches&quot;,&quot;price&quot;:27.99},{&quot;id&quot;:59,&quot;name&quot;:&quot;adidas Girl&#39;s Tiro Track Pants&quot;,&quot;rating&quot;:2.3,&quot;imageUrl&quot;:&quot;/images/products/12_9.jpg&quot;,&quot;sellerId&quot;:14,&quot;companyName&quot;:&quot;embrace enterprise action-items&quot;,&quot;price&quot;:12.99},{&quot;id&quot;:60,&quot;name&quot;:&quot;Layer 8 Women&#39;s Workout Running Yoga Capri and Legging&quot;,&quot;rating&quot;:4.9,&quot;imageUrl&quot;:&quot;/images/products/12_10.jpg&quot;,&quot;sellerId&quot;:15,&quot;companyName&quot;:&quot;cultivate extensible niches&quot;,&quot;price&quot;:17.99},{&quot;id&quot;:61,&quot;name&quot;:&quot;Bowflex SelectTech 552 Adjustable Dumbbell&quot;,&quot;rating&quot;:2.4,&quot;imageUrl&quot;:&quot;/images/products/13_1.jpg&quot;,&quot;sellerId&quot;:11,&quot;companyName&quot;:&quot;e-enable turn-key blockchains&quot;,&quot;price&quot;:429},{&quot;id&quot;:62,&quot;name&quot;:&quot;Bowflex Weight Bench Series&quot;,&quot;rating&quot;:1.2,&quot;imageUrl&quot;:&quot;/images/products/13_2.jpg&quot;,&quot;sellerId&quot;:14,&quot;companyName&quot;:&quot;embrace enterprise action-items&quot;,&quot;price&quot;:349},{&quot;id&quot;:63,&quot;name&quot;:&quot;Bowflex Treadmill Series&quot;,&quot;rating&quot;:2.6,&quot;imageUrl&quot;:&quot;/images/products/13_3.jpg&quot;,&quot;sellerId&quot;:16,&quot;companyName&quot;:&quot;extend revolutionary interfaces&quot;,&quot;price&quot;:2799.99},{&quot;id&quot;:64,&quot;name&quot;:&quot;UREVO Folding Treadmills for Home&quot;,&quot;rating&quot;:1.2,&quot;imageUrl&quot;:&quot;/images/products/13_4.jpg&quot;,&quot;sellerId&quot;:17,&quot;companyName&quot;:&quot;deploy synergistic content&quot;,&quot;price&quot;:382.57},{&quot;id&quot;:65,&quot;name&quot;:&quot;Bowflex Indoor Cycling Exercise Bike Series&quot;,&quot;rating&quot;:3.8,&quot;imageUrl&quot;:&quot;/images/products/13_5.jpg&quot;,&quot;sellerId&quot;:5,&quot;companyName&quot;:&quot;enhance best-of-breed applications&quot;,&quot;price&quot;:1224},{&quot;id&quot;:66,&quot;name&quot;:&quot;Dumbbell Hand Weight&quot;,&quot;rating&quot;:4.6,&quot;imageUrl&quot;:&quot;/images/products/13_6.jpg&quot;,&quot;sellerId&quot;:12,&quot;companyName&quot;:&quot;innovate back-end interfaces&quot;,&quot;price&quot;:18.4},{&quot;id&quot;:67,&quot;name&quot;:&quot;Gaiam Resistance Cord with Door Attachment&quot;,&quot;rating&quot;:2.6,&quot;imageUrl&quot;:&quot;/images/products/13_7.jpg&quot;,&quot;sellerId&quot;:3,&quot;companyName&quot;:&quot;matrix rich e-commerce&quot;,&quot;price&quot;:10.9},{&quot;id&quot;:68,&quot;name&quot;:&quot;Gaiam Classic Balance Ball Chair&quot;,&quot;rating&quot;:3.5,&quot;imageUrl&quot;:&quot;/images/products/13_8.jpg&quot;,&quot;sellerId&quot;:12,&quot;companyName&quot;:&quot;innovate back-end interfaces&quot;,&quot;price&quot;:69.98},{&quot;id&quot;:69,&quot;name&quot;:&quot;VIPERTEK VTS-989-1 Billion Heavy Duty Stun Gun&quot;,&quot;rating&quot;:4.9,&quot;imageUrl&quot;:&quot;/images/products/13_9.jpg&quot;,&quot;sellerId&quot;:14,&quot;companyName&quot;:&quot;embrace enterprise action-items&quot;,&quot;price&quot;:23.99},{&quot;id&quot;:70,&quot;name&quot;:&quot;Berkley Big Game Spinning Fishing Rod&quot;,&quot;rating&quot;:1.3,&quot;imageUrl&quot;:&quot;/images/products/13_10.jpg&quot;,&quot;sellerId&quot;:4,&quot;companyName&quot;:&quot;disintermediate next-generation schemas&quot;,&quot;price&quot;:22.39},{&quot;id&quot;:71,&quot;name&quot;:&quot;WILSON Traditional Soccer Ball&quot;,&quot;rating&quot;:2.1,&quot;imageUrl&quot;:&quot;/images/products/13_11.jpg&quot;,&quot;sellerId&quot;:13,&quot;companyName&quot;:&quot;redefine e-business web services&quot;,&quot;price&quot;:21.91},{&quot;id&quot;:72,&quot;name&quot;:&quot;OE Wheels 22 inch Rims&quot;,&quot;rating&quot;:3.8,&quot;imageUrl&quot;:&quot;/images/products/14_1.jpg&quot;,&quot;sellerId&quot;:16,&quot;companyName&quot;:&quot;extend revolutionary interfaces&quot;,&quot;price&quot;:2397.87},{&quot;id&quot;:73,&quot;name&quot;:&quot;Dick Cepek DC Matrix Wheel with Matte Black Finish (20x9\&quot;/5x150mm) 12 millimeters offset&quot;,&quot;rating&quot;:2.3,&quot;imageUrl&quot;:&quot;/images/products/14_2.jpg&quot;,&quot;sellerId&quot;:17,&quot;companyName&quot;:&quot;deploy synergistic content&quot;,&quot;price&quot;:194.14},{&quot;id&quot;:74,&quot;name&quot;:&quot;Cleaning Gel for Car&quot;,&quot;rating&quot;:2.5,&quot;imageUrl&quot;:&quot;/images/products/14_3.jpg&quot;,&quot;sellerId&quot;:18,&quot;companyName&quot;:&quot;transform efficient paradigms&quot;,&quot;price&quot;:6.79},{&quot;id&quot;:75,&quot;name&quot;:&quot;Amooca Car Seat Headrest Hook&quot;,&quot;rating&quot;:2.5,&quot;imageUrl&quot;:&quot;/images/products/14_4.jpg&quot;,&quot;sellerId&quot;:11,&quot;companyName&quot;:&quot;e-enable turn-key blockchains&quot;,&quot;price&quot;:6.99},{&quot;id&quot;:76,&quot;name&quot;:&quot;Car Charger&quot;,&quot;rating&quot;:2.5,&quot;imageUrl&quot;:&quot;/images/products/14_5.jpg&quot;,&quot;sellerId&quot;:13,&quot;companyName&quot;:&quot;redefine e-business web services&quot;,&quot;price&quot;:9.99},{&quot;id&quot;:77,&quot;name&quot;:&quot;iCarCover Car Cover Waterproof&quot;,&quot;rating&quot;:3.8,&quot;imageUrl&quot;:&quot;/images/products/14_6.jpg&quot;,&quot;sellerId&quot;:10,&quot;companyName&quot;:&quot;transform collaborative niches&quot;,&quot;price&quot;:79.99},{&quot;id&quot;:78,&quot;name&quot;:&quot;Ajxn Car Blind Spot Mirror&quot;,&quot;rating&quot;:4.7,&quot;imageUrl&quot;:&quot;/images/products/14_7.jpg&quot;,&quot;sellerId&quot;:19,&quot;companyName&quot;:&quot;synergize enterprise mindshare&quot;,&quot;price&quot;:5.99},{&quot;id&quot;:79,&quot;name&quot;:&quot;Rightline Gear Moki Door Step&quot;,&quot;rating&quot;:4.6,&quot;imageUrl&quot;:&quot;/images/products/14_8.jpg&quot;,&quot;sellerId&quot;:3,&quot;companyName&quot;:&quot;matrix rich e-commerce&quot;,&quot;price&quot;:44.95},{&quot;id&quot;:80,&quot;name&quot;:&quot;Cell Phone Holder&quot;,&quot;rating&quot;:4.8,&quot;imageUrl&quot;:&quot;/images/products/14_9.jpg&quot;,&quot;sellerId&quot;:3,&quot;companyName&quot;:&quot;matrix rich e-commerce&quot;,&quot;price&quot;:20.99},{&quot;id&quot;:81,&quot;name&quot;:&quot;Bling License Plate Frame for Women&quot;,&quot;rating&quot;:3.9,&quot;imageUrl&quot;:&quot;/images/products/14_10.jpg&quot;,&quot;sellerId&quot;:16,&quot;companyName&quot;:&quot;extend revolutionary interfaces&quot;,&quot;price&quot;:11.97},{&quot;id&quot;:82,&quot;name&quot;:&quot;Massimo MSA 150cc 4 Wheelers&quot;,&quot;rating&quot;:3.7,&quot;imageUrl&quot;:&quot;/images/products/15_1.jpg&quot;,&quot;sellerId&quot;:13,&quot;companyName&quot;:&quot;redefine e-business web services&quot;,&quot;price&quot;:3699},{&quot;id&quot;:83,&quot;name&quot;:&quot;FRP DB003 40CC 4-Stroke Kids Dirt Off Road Mini Dirt Bike&quot;,&quot;rating&quot;:2.8,&quot;imageUrl&quot;:&quot;/images/products/15_2.jpg&quot;,&quot;sellerId&quot;:12,&quot;companyName&quot;:&quot;innovate back-end interfaces&quot;,&quot;price&quot;:389.99},{&quot;id&quot;:84,&quot;name&quot;:&quot;X-PRO 250cc Injection Motorcycle&quot;,&quot;rating&quot;:3.6,&quot;imageUrl&quot;:&quot;/images/products/15_3.jpg&quot;,&quot;sellerId&quot;:7,&quot;companyName&quot;:&quot;deliver 24/7 content&quot;,&quot;price&quot;:389.99},{&quot;id&quot;:85,&quot;name&quot;:&quot;X-PRO Roadster Dirt Bike&quot;,&quot;rating&quot;:1.4,&quot;imageUrl&quot;:&quot;/images/products/15_4.jpg&quot;,&quot;sellerId&quot;:10,&quot;companyName&quot;:&quot;transform collaborative niches&quot;,&quot;price&quot;:2859},{&quot;id&quot;:86,&quot;name&quot;:&quot;Massimo T-Boss 550 Dump Bed&quot;,&quot;rating&quot;:3.2,&quot;imageUrl&quot;:&quot;/images/products/15_5.jpg&quot;,&quot;sellerId&quot;:3,&quot;companyName&quot;:&quot;matrix rich e-commerce&quot;,&quot;price&quot;:12999},{&quot;id&quot;:87,&quot;name&quot;:&quot;YESLIFE Ski Mask&quot;,&quot;rating&quot;:5,&quot;imageUrl&quot;:&quot;/images/products/15_6.jpg&quot;,&quot;sellerId&quot;:8,&quot;companyName&quot;:&quot;monetize out-of-the-box action-items&quot;,&quot;price&quot;:5.99},{&quot;id&quot;:88,&quot;name&quot;:&quot;Bike Phone Holder&quot;,&quot;rating&quot;:2.3,&quot;imageUrl&quot;:&quot;/images/products/15_7.jpg&quot;,&quot;sellerId&quot;:11,&quot;companyName&quot;:&quot;e-enable turn-key blockchains&quot;,&quot;price&quot;:18.99},{&quot;id&quot;:89,&quot;name&quot;:&quot;Bell GP3 Sport SA2020, Racing Helmet&quot;,&quot;rating&quot;:3.5,&quot;imageUrl&quot;:&quot;/images/products/15_8.jpg&quot;,&quot;sellerId&quot;:16,&quot;companyName&quot;:&quot;extend revolutionary interfaces&quot;,&quot;price&quot;:699.95},{&quot;id&quot;:90,&quot;name&quot;:&quot;Global Vision Sly Foam Padded Motorcycle Sunglasses&quot;,&quot;rating&quot;:4.5,&quot;imageUrl&quot;:&quot;/images/products/15_9.jpg&quot;,&quot;sellerId&quot;:1,&quot;companyName&quot;:&quot;streamline impactful synergies&quot;,&quot;price&quot;:13.99},{&quot;id&quot;:91,&quot;name&quot;:&quot;X-PRO 125cc Vader Adult Motorcycle Gas Motorcycle&quot;,&quot;rating&quot;:5,&quot;imageUrl&quot;:&quot;/images/products/15_10.jpg&quot;,&quot;sellerId&quot;:4,&quot;companyName&quot;:&quot;disintermediate next-generation schemas&quot;,&quot;price&quot;:1579}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

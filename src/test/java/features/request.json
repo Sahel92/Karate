@@ -1,0 +1,10 @@
+{
+  "country": "#(country)",
+  "fullName": "#(fullName)",
+  "phoneNumber": "#(phoneNumber)",
+  "street": "#(street)",
+  "apartment": "#(apartment)",
+  "city": "#(city)",
+  "state": "#(state)",
+  "zipCode": "#(zipCode)"
+}
